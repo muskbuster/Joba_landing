@@ -57,9 +57,9 @@ function App() {
           <img
             className={styles.lastSectionImage}
             alt=""
-            src={rdhero}
+            src={ndhero}
           />
-          <Button className={styles.button2} variant="dark">
+          <Button className={styles.button2} variant="light">
             I want to earn
           </Button>
           <div className={styles.iAmATalentLookingForRole}>
