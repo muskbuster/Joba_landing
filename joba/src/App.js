@@ -2,7 +2,10 @@ import { FunctionComponent } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form } from "react-bootstrap";
 import styles from "./App.module.css";
-import logo from "./joba.png" 
+import logo from "./joba.png"
+import hero from "./hero1.png"
+import ndhero from "./hero2.png" 
+import rdhero from "./hero3.png" 
 
 function App() {
     return (
@@ -21,7 +24,7 @@ function App() {
             </Button>
           </div>
           <div className={styles.gLOBALIZATION30Div}>GLOBALIZATION 3.0</div>
-          <img className={styles.heroImageIcon} alt="" src={logo} />
+          <img className={styles.heroImageIcon} alt="" src={hero} />
           <Button className={styles.button1} variant="primary">
             Join the waitlist
           </Button>
@@ -40,7 +43,7 @@ function App() {
           <img
             className={styles.secondSectionImage}
             alt=""
-            src={logo}
+            src={rdhero}
           />
         </div>
         <div className={styles.joinJobaDiv}>
@@ -54,7 +57,7 @@ function App() {
           <img
             className={styles.lastSectionImage}
             alt=""
-            src={logo}
+            src={rdhero}
           />
           <Button className={styles.button2} variant="dark">
             I want to earn
