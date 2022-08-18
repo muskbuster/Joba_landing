@@ -25,7 +25,14 @@
   display: inline-block;
   width: 643px;
 }
-.button,
+.button{
+  width: 203px;
+  position: absolute;
+  top: 19px;
+  left: 1412px;
+  background: linear-gradient(92.76deg, #4C5ACD 50.52%, #F598AA 150.68%, #FDDFD0 168.67%);
+  
+}
 .frameDiv {
   width: 203px;
   position: absolute;
@@ -59,17 +66,34 @@
   height: 487px;
   object-fit: cover;
 }
-.button1,
-.frameFormGroup {
-  position: absolute;
-  top: 548px;
-  left: 452px;
+.button1{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 14px 48px;
+gap: 10px;
+
+position: absolute;
+width: 214px;
+height: 65px;
+left: 452px;
+top: 548px;
+
+background: linear-gradient(92.76deg, #4C5ACD 50.52%, #F598AA 150.68%, #FDDFD0 168.67%);
 }
 .frameFormGroup {
+position: absolute;
+width: 322px;
+height: 65px;
+left: 120px;
+top: 548px;
+}
+.frameFormGroup {
+  position: absolute;
   width: 322px;
-  border: 0;
-  background-color: transparent;
+  height: 88px;
   left: 120px;
+  top: 548px;
 }
 .heroSectionDiv,
 .joba02Icon {
