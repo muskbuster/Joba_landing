@@ -1,0 +1,310 @@
+.rectangleDiv {
+  position: absolute;
+  top: 0;
+  left: 1112px;
+  background-color: #fffcf4;
+  width: 728px;
+  height: 689px;
+}
+.workEarnAndInvestInWeb3 {
+  position: absolute;
+  top: 189px;
+  left: 120px;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  display: inline-block;
+  width: 662px;
+}
+.discoverOpenJobsInMultiple {
+  position: absolute;
+  top: 403px;
+  left: 120px;
+  font-size: 20px;
+  line-height: 155%;
+  color: #353535;
+  display: inline-block;
+  width: 643px;
+}
+.button,
+.frameDiv {
+  width: 203px;
+  position: absolute;
+  top: 19px;
+  left: 1412px;
+}
+.frameDiv {
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 1770px;
+  height: 90px;
+  overflow: hidden;
+}
+.gLOBALIZATION30Div {
+  position: absolute;
+  top: 155px;
+  left: 120px;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  line-height: 150%;
+  font-weight: 600;
+  display: inline-block;
+}
+.heroImageIcon {
+  position: absolute;
+  top: 148px;
+  left: 830px;
+  border-radius: 8px;
+  width: 490px;
+  height: 487px;
+  object-fit: cover;
+}
+.button1,
+.frameFormGroup {
+  position: absolute;
+  top: 548px;
+  left: 452px;
+}
+.frameFormGroup {
+  width: 322px;
+  border: 0;
+  background-color: transparent;
+  left: 120px;
+}
+.heroSectionDiv,
+.joba02Icon {
+  position: absolute;
+  top: 7px;
+  left: 105px;
+  width: 149px;
+  height: 76px;
+  overflow: hidden;
+}
+.heroSectionDiv {
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 1770px;
+  height: 689px;
+  font-size: 76px;
+}
+.builtByBuildersForBuilder {
+  position: absolute;
+  top: 148px;
+  left: 671px;
+  letter-spacing: -0.02em;
+  line-height: 125%;
+  display: inline-block;
+  width: 662px;
+}
+.theDemandForWeb3TalentIs {
+  position: absolute;
+  top: 325px;
+  left: 671px;
+  font-size: 20px;
+  line-height: 155%;
+  color: #353535;
+  display: inline-block;
+  width: 643px;
+}
+.secondSectionImage {
+  position: absolute;
+  top: 97px;
+  left: 126px;
+  border-radius: 8px;
+  width: 404px;
+  height: 402px;
+  object-fit: cover;
+}
+.subsectionDiv {
+  position: absolute;
+  top: 689px;
+  left: 0;
+  background-color: #fff;
+  width: 1770px;
+  height: 614px;
+  overflow: hidden;
+}
+.earnAndInvestInWeb3,
+.joinTheJobaNetwork {
+  position: absolute;
+  letter-spacing: -0.02em;
+  line-height: 125%;
+  display: inline-block;
+  text-align: center;
+}
+.joinTheJobaNetwork {
+  top: 78px;
+  left: 117px;
+  color: #021e2d;
+}
+.earnAndInvestInWeb3 {
+  top: 153px;
+  left: 118px;
+  background: linear-gradient(
+    92.76deg,
+    #4c5acd 18.42%,
+    #f598aa 55.76%,
+    #fddfd0 62.47%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loremIpsumDolorSitAmetCo {
+  position: absolute;
+  top: 249px;
+  left: 119px;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  line-height: 155%;
+  color: #353535;
+  display: inline-block;
+  width: 593px;
+}
+.lastSectionImage {
+  position: absolute;
+  top: 103px;
+  left: 880px;
+  border-radius: 8px;
+  width: 454px;
+  height: 452px;
+  object-fit: cover;
+}
+.button2 {
+  position: absolute;
+  top: 408px;
+  left: 120px;
+}
+.iAmATalentLookingForRole,
+.iAmLookingToHire {
+  position: absolute;
+  top: 482px;
+  left: 135px;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 600;
+  display: inline-block;
+}
+.iAmLookingToHire {
+  left: 443px;
+}
+.button3,
+.joinJobaDiv {
+  position: absolute;
+  top: 408px;
+  left: 390px;
+}
+.joinJobaDiv {
+  top: 1303px;
+  left: 0;
+  background-color: #fff;
+  width: 1770px;
+  height: 654px;
+  overflow: hidden;
+  color: #6c6c6c;
+}
+.stayTunedForMoreUpdates {
+  position: absolute;
+  top: 63px;
+  left: 387px;
+  font-size: 48px;
+  line-height: 140%;
+  display: inline-block;
+}
+.contactUsDiv,
+.loremIpsumDolorSitAmetCo1 {
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+}
+.loremIpsumDolorSitAmetCo1 {
+  top: 148px;
+  left: 353px;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  line-height: 155%;
+  text-align: center;
+  width: 734px;
+}
+.contactUsDiv {
+  top: 439px;
+  left: 502px;
+  line-height: 160%;
+}
+.discordDiv,
+.telegramDiv {
+  top: 439px;
+  line-height: 160%;
+  font-weight: 600;
+}
+.telegramDiv {
+  position: absolute;
+  left: 627px;
+  display: inline-block;
+}
+.discordDiv {
+  left: 739px;
+}
+.discordDiv,
+.enterYourEmailAddress,
+.twitterDiv {
+  position: absolute;
+  display: inline-block;
+}
+.twitterDiv {
+  top: 439px;
+  left: 840px;
+  line-height: 160%;
+  font-weight: 600;
+}
+.enterYourEmailAddress {
+  top: 15px;
+  left: 30px;
+  letter-spacing: -0.01em;
+  line-height: 155%;
+}
+.frameButton,
+.frameDiv1 {
+  position: absolute;
+  top: 254px;
+}
+.frameDiv1 {
+  left: 382px;
+  background-color: #f6f6f6;
+  width: 491px;
+  height: 56px;
+  overflow: hidden;
+  color: #6c6c6c;
+}
+.frameButton {
+  left: 889px;
+}
+.footerDiv,
+.joba02Icon1 {
+  position: absolute;
+  top: 414px;
+  left: 120px;
+  width: 145px;
+  height: 74px;
+  overflow: hidden;
+}
+.footerDiv {
+  top: 1957px;
+  left: -8px;
+  background-color: #021926;
+  width: 1770px;
+  height: 517px;
+  font-size: 16px;
+  color: #fff1cd;
+}
+.homepageDiv {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 2474px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 60px;
+  color: #021e2d;
+  font-family: Plus Jakarta Sans;
+}
