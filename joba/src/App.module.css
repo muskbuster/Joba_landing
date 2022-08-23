@@ -3,8 +3,9 @@
   top: 0;
   left: 1112px;
   background-color: #fffcf4;
-  width: 728px;
   height: 689px;
+  flex: 0 0 auto;
+  width: auto;
 }
 .workEarnAndInvestInWeb3 {
   position: absolute;
@@ -322,9 +323,9 @@ top: 548px;
   color: #fff1cd;
 }
 .homepageDiv {
-  position: relative;
+  position: absolute;
   background-color: #fff;
-  width: 100%;
+  width: 85%;
   height: 2474px;
   overflow: hidden;
   text-align: left;

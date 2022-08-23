@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form, Col} from "react-bootstrap";
 import styles from "./App.module.css";
 import logo from "./joba.png"
 import hero from "./hero1.png"
