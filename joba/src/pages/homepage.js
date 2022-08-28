@@ -19,7 +19,7 @@ function Homepage() {
           <div
             className={styles.discoverOpenJobsInMultiple}
           >{`Discover open jobs in multiple blockchain ecosystems + earn bounties for referrals & getting hired - over $1,000,000+ in crypto bounties have been set to date.`}</div>
-        
+         
           <div className={styles.gLOBALIZATION30Div}>GLOBALIZATION 3.0</div>
           <img className={styles.heroImageIcon} alt="" src={logo} />
           <Button className={styles.button1} variant="primary">

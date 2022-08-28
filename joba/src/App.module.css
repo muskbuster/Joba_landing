@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 1112px;
-  background-color: #fffcf4;
+  background-color: #caa02c;
   height: 689px;
   flex: 0 0 auto;
   width: auto;
@@ -198,7 +198,10 @@ top: 548px;
 .button2 {
   position: absolute;
   top: 408px;
-  left: 120px;
+  top: 408px;
+  width: 180px;
+  height: 65px;
+  left: 135px;
 }
 .iAmATalentLookingForRole,
 .iAmLookingToHire {
@@ -217,7 +220,9 @@ top: 548px;
 .joinJobaDiv {
   position: absolute;
   top: 408px;
-  left: 390px;
+  width: 180px;
+  height: 65px;
+  left: 425px;
 }
 .joinJobaDiv {
   top: 1303px;
@@ -328,7 +333,7 @@ top: 548px;
   top: 80px;
   width: 100%;
   height: 2374px;
-  overflow: hidden;
+  overflow:visible;
   text-align: left;
   font-size: 60px;
   color: #021e2d;

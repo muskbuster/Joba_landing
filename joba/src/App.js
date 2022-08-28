@@ -7,7 +7,6 @@ import hero from "./hero1.png"
 import ndhero from "./hero2.png" 
 import rdhero from "./hero3.png" 
 import { useNavigate } from 'react-router-dom';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Homepage from "./pages/homepage";
 import invoice from "/workspace/init/joba/src/pages/invoice.js";
 import Navbar from "/workspace/init/joba/src/components/navbar.js";
@@ -16,9 +15,7 @@ function App() {
     return (
       <>
      <div>
-     
       <Navbar/>
-     
      </div>
      <div>
       <Homepage/>
