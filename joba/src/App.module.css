@@ -325,8 +325,9 @@ top: 548px;
 .homepageDiv {
   position: absolute;
   background-color: #fff;
-  width: 85%;
-  height: 2474px;
+  top: 80px;
+  width: 100%;
+  height: 2374px;
   overflow: hidden;
   text-align: left;
   font-size: 60px;

@@ -13,7 +13,9 @@ function Navbar() {
               Connect wallet
             </Button>
           </div>
+          <button >
       <img className={styles.joba02Icon} alt="" src={logo} />
+      </button>
       </div>
       
     );

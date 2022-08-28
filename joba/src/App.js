@@ -14,10 +14,16 @@ import Navbar from "/workspace/init/joba/src/components/navbar.js";
 import Invoice from "/workspace/init/joba/src/pages/invoice.js";
 function App() {
     return (
+      <>
      <div>
+     
       <Navbar/>
+     
+     </div>
+     <div>
       <Homepage/>
      </div>
+     </>
   );
   };
 
