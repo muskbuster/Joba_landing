@@ -1,0 +1,283 @@
+.invoicebox{
+    box-sizing: border-box;
+
+position: absolute;
+width: 794px;
+height: 1173px;
+left: 523px;
+top: 221px;
+
+background: #FFFFFF;
+/* Joba/Grey/25 */
+
+border: 1px solid #DCDCDC;
+
+}
+.walletholder{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 444px;
+height: 78px;
+left: 166px;
+top: 342px;
+
+}
+.wallet{
+    box-sizing: border-box;
+
+width: 444px;
+height: 48px;
+
+background: #FFFFFF;
+/* Joba/Grey/50 */
+
+border: 1px solid #C4C4C4;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.descriptionholder{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 442px;
+height: 186px;
+left: 166px;
+top: 444px;
+}
+.description{
+    box-sizing: border-box;
+
+width: 442px;
+height: 156px;
+
+background: #FFFFFF;
+/* Joba/Grey/50 */
+
+border: 1px solid #C4C4C4;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.header{
+    position: absolute;
+width: 247px;
+height: 45px;
+left: 120px;
+top: 133px;
+
+/* Joba/header-4/title */
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+
+
+/* Joba/Grey/600 */
+
+color: #353535;
+}
+.amountholder{
+    position: absolute;
+width: 205px;
+height: 78px;
+left: 0px;
+top: 0px;
+}
+.currency,
+.amount{
+    box-sizing: border-box;
+
+position: absolute;
+width: 205px;
+height: 48px;
+left: 0px;
+top: 30px;
+
+background: #FFFFFF;
+/* Joba/Grey/50 */
+
+border: 1px solid #C4C4C4;
+border-radius: 4px;
+}
+.currencyholder{
+    position: absolute;
+width: 205px;
+height: 78px;
+left: 239px;
+top: 0px;
+}
+.unitholder{
+    position: absolute;
+width: 443px;
+height: 78px;
+left: 166px;
+top: 654px;
+}
+.strtbox{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 204px;
+height: 78px;
+left: 166px;
+top: 758px;
+
+}
+.endbox{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 206px;
+height: 78px;
+left: 404px;
+top: 758px;
+
+}
+.endtm,
+.strttm{
+    box-sizing: border-box;
+
+width: 204px;
+height: 48px;
+
+background: #FFFFFF;
+/* Joba/Grey/50 */
+
+border: 1px solid #C4C4C4;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.submit{
+    /* Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14px 32px;
+gap: 10px;
+
+position: absolute;
+width: 442px;
+height: 52px;
+left: 166px;
+top: 988px;
+
+/* Joba/Blue-gradient */
+
+background: linear-gradient(92.76deg, #4C5ACD 50.52%, #F598AA 150.68%, #FDDFD0 168.67%);
+}
+.content{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 6px;
+
+position: absolute;
+width: 260px;
+height: 134px;
+left: 47px;
+top: 137px;
+}
+.invdetails{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+padding: 0px;
+gap: 4px;
+
+position: absolute;
+width: 155px;
+height: 48px;
+left: 591px;
+top: 138px;
+}
+.userdetails{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 163px;
+height: 37px;
+left: 48px;
+top: 86px;
+
+}
+.name{
+    width: 118px;
+height: 22px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 155%;
+/* identical to box height, or 22px */
+
+letter-spacing: -0.01em;
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.imgholder{
+    
+width: 37px;
+height: 37px;
+
+background: url(/workspace/init/joba/src/joba.png);
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}

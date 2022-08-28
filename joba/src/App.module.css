@@ -35,16 +35,16 @@
   
 }
 .frameDiv {
-  width: 203px;
+  width: 223px;
   position: absolute;
   top: 19px;
-  left: 1412px;
+  left: 1512px;
 }
 .frameDiv {
   top: 0;
   left: 0;
-  background-color: #fff;
-  width: 1770px;
+  background-color: rgb(204, 201, 201);
+  width: 1880px;
   height: 90px;
   overflow: hidden;
 }
