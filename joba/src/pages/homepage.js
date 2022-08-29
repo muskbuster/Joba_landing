@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form, Col} from "react-bootstrap";
 import styles from "/workspace/init/joba/src/App.module.css";
 import logo from "/workspace/init/joba/src/joba.png"
+import hero from "/workspace/init/joba/src/hero1.png"
+import ndhero from "/workspace/init/joba/src/hero2.png" 
+import rdhero from "/workspace/init/joba/src/hero3.png" 
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -21,7 +24,7 @@ function Homepage() {
           >{`Discover open jobs in multiple blockchain ecosystems + earn bounties for referrals & getting hired - over $1,000,000+ in crypto bounties have been set to date.`}</div>
          
           <div className={styles.gLOBALIZATION30Div}>GLOBALIZATION 3.0</div>
-          <img className={styles.heroImageIcon} alt="" src={logo} />
+          <img className={styles.heroImageIcon} alt="" src={hero} />
           <Button className={styles.button1} variant="primary">
             Join the waitlist
           </Button>
@@ -40,7 +43,7 @@ function Homepage() {
           <img
             className={styles.secondSectionImage}
             alt=""
-            src={logo}
+            src={ndhero}
           />
         </div>
         <div className={styles.joinJobaDiv}>
@@ -54,7 +57,7 @@ function Homepage() {
           <img
             className={styles.lastSectionImage}
             alt=""
-            src={logo}
+            src={rdhero}
           />
           <Button className={styles.button2} variant="light">
             I want to earn

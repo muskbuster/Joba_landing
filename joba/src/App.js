@@ -18,7 +18,7 @@ function App() {
       <Navbar/>
      </div>
      <div>
-      <Invoice/>
+      <Homepage/>
      </div>
      </>
   );
