@@ -10,22 +10,23 @@ import { login, logout } from '/workspace/init/joba/src/utils.js'
 const { networkId } = getConfig(process.env.NODE_ENV || 'development')
 
 function Navbar() {
-
+ 
+  
    
-    // return (
+    return (
       
-    //     <div>
-    //   <div className={styles.frameDiv}>
-    //         <Button  className={styles.button}  variant="primary">
-    //           Connect wallet
-    //         </Button>
-    //       </div>
-    //       <button >
-    //   <img className={styles.joba02Icon} alt="" src={logo} />
-    //   </button>
-    //   </div>
+        <div>
+      <div className={styles.frameDiv}>
+            <Button  className={styles.button} onClick={login}  variant="primary">
+              Connect wallet
+            </Button>
+          </div>
+          <button >
+      <img className={styles.joba02Icon} alt="" src={logo} />
+      </button>
+      </div>
       
-    // );
+    );
   }
   
   export default Navbar;
