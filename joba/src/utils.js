@@ -1,4 +1,4 @@
-import { connect, Contract, keyStores, WalletConnection } from 'near-api-js'
+import { connect, Contract, keyStores, WalletConnection } from 'near-api-js';
 import getConfig from '/workspace/init/joba/src/config.js'
 
 const nearConfig = getConfig(process.env.NODE_ENV || 'development')

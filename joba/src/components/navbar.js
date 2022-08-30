@@ -4,10 +4,8 @@ import React from "react"
 
 import { Button, Form, Col} from "react-bootstrap";
 import styles from "/workspace/init/joba/src/App.module.css";
-import { FunctionComponent } from "react";
 import logo from "/workspace/init/joba/src/joba.png"
-import getConfig from '/workspace/init/joba/src/config.js'
-import { login, logout } from '/workspace/init/joba/src/utils.js'
+
 
 import { Outlet, Link } from "react-router-dom";
 
@@ -22,7 +20,7 @@ const Navbar = () => {
       </button>
             </Link>
             
-             <Button  className={styles.button} onClick={login}  variant="primary">
+             <Button  className={styles.button}  variant="primary">
             Connect wallet
            </Button>
       </nav>
