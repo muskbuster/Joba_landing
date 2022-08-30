@@ -1,0 +1,66 @@
+.h1{
+  
+position: absolute;
+width: 617px;
+height: 45px;
+left: 412px;
+top: 217px;
+
+/* Joba/header-4/title */
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+
+
+/* Joba/Grey/600 */
+
+color: #353535;
+}
+.h2{
+    position: absolute;
+width: 513px;
+height: 48px;
+left: 463px;
+top: 276px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+text-align: center;
+
+/* Joba/Grey/500 - Body text colour */
+
+color: #424242;
+
+}
+.btn1{
+    /* Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 14px 32px;
+gap: 10px;
+
+position: absolute;
+width: 182px;
+height: 52px;
+left: 629px;
+top: 350px;
+
+/* Joba/Blue-gradient */
+
+background: linear-gradient(92.76deg, #4C5ACD 50.52%, #F598AA 150.68%, #FDDFD0 168.67%);
+border-radius: 8p
+}

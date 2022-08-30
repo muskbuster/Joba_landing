@@ -19,10 +19,11 @@ const Navbar = () => {
      <img className={styles.joba02Icon} alt="" src={logo} />
       </button>
             </Link>
-            
+            <Link to="/login">
              <Button  className={styles.button}  variant="primary">
             Connect wallet
            </Button>
+           </Link>
       </nav>
 
       <Outlet />
