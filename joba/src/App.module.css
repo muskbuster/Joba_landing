@@ -13,13 +13,16 @@
   left: 120px;
   letter-spacing: -0.02em;
   line-height: 120%;
-  display: inline-block;
+  display: flexbox;
+  flex-wrap: wrap;
+  align-content: stretch;
   width: 662px;
 }
 .discoverOpenJobsInMultiple {
   position: absolute;
   top: 403px;
-  left: 120px;
+  left: 120px; flex-wrap: wrap;
+  align-content: stretch;
   font-size: 20px;
   line-height: 155%;
   color: #353535;
