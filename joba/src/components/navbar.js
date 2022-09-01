@@ -12,6 +12,7 @@ const Navbar = () => {
 
   const isConnected = window.walletConnection.isSignedIn();
   const buttonLabel = isConnected ? `${window.accountId}` : 'Connect Wallet';
+  
   return (
     <>
       <div className={styles.navbar}>
@@ -31,6 +32,11 @@ const Navbar = () => {
       <Outlet />
     </>
   )
+  
+  
+    
+
+  
 };
 
 export default Navbar;
