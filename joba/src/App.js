@@ -7,10 +7,11 @@ import Navbar from "/workspace/init/joba/src/components/navbar.js";
 import Invoice from "/workspace/init/joba/src/pages/invoice.js";
 import Logger from "./pages/login";
 import Test from "./pages/flexboxtest";
+import Project from "./pages/projects";
 function App() {
     return (
       <>
-     
+{/*      
       <BrowserRouter>
       <Routes>
       <Route path="/" element={<Navbar/>}>
@@ -20,7 +21,8 @@ function App() {
         <Route path="/login" element={<Logger/>}/>
         </Route>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
+    <Project/>
     </>
    
   );
