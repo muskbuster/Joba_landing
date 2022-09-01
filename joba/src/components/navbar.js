@@ -5,14 +5,16 @@ import Homepage from "/workspace/init/joba/src/pages/homepage.js";
 import { Button, Form, Col} from "react-bootstrap";
 import styles from "/workspace/init/joba/src/App.module.css";
 import logo from "/workspace/init/joba/src/joba.png"
-
-
+import { login, logout } from '/workspace/init/joba/src/utils.js';
 import { Outlet, Link } from "react-router-dom";
 
 const Navbar = () => {
+
+  const isConnected = window.walletConnection.isSignedIn();
+  const buttonLabel = isConnected ? `${window.accountId}` : 'Connect Wallet';
   return (
     <>
-      <nav>
+      <div className={styles.navbar}>
   
             <Link to="/homepage">
             <button >
@@ -21,10 +23,10 @@ const Navbar = () => {
             </Link>
             <Link to="/login">
              <Button  className={styles.button}  variant="primary">
-            Connect wallet
+             {buttonLabel}
            </Button>
            </Link>
-      </nav>
+      </div>
 
       <Outlet />
     </>
