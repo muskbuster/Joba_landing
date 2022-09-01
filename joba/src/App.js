@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "/workspace/init/joba/src/components/navbar.js";
 import Invoice from "/workspace/init/joba/src/pages/invoice.js";
 import Logger from "./pages/login";
+import Test from "./pages/flexboxtest";
 function App() {
     return (
       <>
@@ -13,14 +14,15 @@ function App() {
       <BrowserRouter>
       <Routes>
       <Route path="/" element={<Navbar/>}>
+        <Route path="/" element={<Homepage />}/>
         <Route path="/homepage" element={<Homepage />}/>
         <Route path="/invoice" element={<Invoice />}/>
         <Route path="/login" element={<Logger/>}/>
-</Route>
+        </Route>
       </Routes>
     </BrowserRouter>
-    
-     </>
+    </>
+   
   );
   };
 

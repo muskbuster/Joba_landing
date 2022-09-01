@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react"
-
+import Homepage from "/workspace/init/joba/src/pages/homepage.js";
 
 import { Button, Form, Col} from "react-bootstrap";
 import styles from "/workspace/init/joba/src/App.module.css";

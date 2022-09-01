@@ -4,7 +4,7 @@ import { Button, Form, Col} from "react-bootstrap";
 import styles from "/workspace/init/joba/src/App.module.css";
 import logo from "/workspace/init/joba/src/joba.png"
 import hero from "/workspace/init/joba/src/hero1.png"
-import ndhero from "/workspace/init/joba/src/hero2.png" 
+import ndhero from "/workspace/init/joba/src/hero2.png"
 import rdhero from "/workspace/init/joba/src/hero3.png" 
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';

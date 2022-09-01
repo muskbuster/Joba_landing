@@ -4,6 +4,9 @@ position: absolute;
 width: 617px;
 height: 45px;
 left: 412px;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: column;
 top: 217px;
 
 /* Joba/header-4/title */
@@ -11,6 +14,8 @@ top: 217px;
 font-family: 'Plus Jakarta Sans';
 font-style: normal;
 font-weight: 700;
+display: inline flex;
+flex-wrap: nowrap;
 font-size: 35px;
 line-height: 130%;
 /* or 45px */
@@ -20,11 +25,16 @@ line-height: 130%;
 
 color: #353535;
 }
+
+
 .h2{
-    position: absolute;
+    position: relative;
 width: 513px;
 height: 48px;
+flex-direction: column;
 left: 463px;
+display: flex;
+flex-wrap: nowrap;
 top: 276px;
 
 font-family: 'Plus Jakarta Sans';
@@ -52,11 +62,11 @@ flex-direction: row;
 align-items: center;
 padding: 14px 32px;
 gap: 10px;
-
+flex-direction: column;
 position: absolute;
 width: 182px;
 height: 52px;
-left: 629px;
+left: 1629px;
 top: 350px;
 
 /* Joba/Blue-gradient */

@@ -62,7 +62,7 @@
   display: inline-block;
 }
 .heroImageIcon {
-  position: absolute;
+  position: relative;
   top: 148px;
   left: 830px;
   border-radius: 8px;

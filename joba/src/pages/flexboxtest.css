@@ -1,0 +1,20 @@
+.trial{
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  width: 490px;
+  height: 487px;
+  font-size: 144px;
+  line-height: 155%;
+}
+.heroImageIcon {
+  border-radius: 8px;
+  width: 490px;
+  height: 487px;
+  object-fit: cover;
+  border-radius: 8px;
+  width: 290px;
+  height: 287px;
+  object-fit: cover;
+  position: relative;
+}

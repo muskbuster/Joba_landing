@@ -19,15 +19,18 @@ export default function Logger() {
 
   if (!isConnected) {return (
     <main>
-      <p className="h1">
+      <div className="flexbox">
+
+     
+      <div className="h1">
       You need to connect your wallet first
-      </p>
+      </div>
       <p className="h2">
       To become a talent on joba, you’re required to connect to your metamask wallet  to enable access
       </p>
       
         <button className='btn1' onClick={handleClick}>{buttonLabel}</button>
-      
+        </div>
     </main>
   )
   }

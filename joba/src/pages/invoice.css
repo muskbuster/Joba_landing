@@ -1,7 +1,7 @@
 .invoicebox{
     box-sizing: border-box;
-
-position: absolute;
+flex: auto;
+position: relative;
 width: 794px;
 height: 1173px;
 left: 523px;
