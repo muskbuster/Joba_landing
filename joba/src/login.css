@@ -1,9 +1,9 @@
 .h1{
   
 position: absolute;
-width: 617px;
-height: 45px;
-left: 412px;
+width: 800px;
+height: 65px;
+left: 350px;
 display: flex;
 flex-wrap: nowrap;
 flex-direction: column;
@@ -16,7 +16,7 @@ font-style: normal;
 font-weight: 700;
 display: inline flex;
 flex-wrap: nowrap;
-font-size: 35px;
+font-size: 45px;
 line-height: 130%;
 /* or 45px */
 
@@ -40,7 +40,7 @@ top: 276px;
 font-family: 'Plus Jakarta Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
+font-size: 20px;
 line-height: 24px;
 /* or 150% */
 
@@ -48,7 +48,7 @@ text-align: center;
 
 /* Joba/Grey/500 - Body text colour */
 
-color: #424242;
+color: #131212;
 
 }
 .btn1{
@@ -66,9 +66,9 @@ flex-direction: column;
 position: absolute;
 width: 182px;
 height: 52px;
-left: 619px;
+left: 630px;
 top: 370px;
-
+text-emphasis-color:white;
 /* Joba/Blue-gradient */
 
 background: linear-gradient(92.76deg, #4C5ACD 50.52%, #F598AA 150.68%, #FDDFD0 168.67%);

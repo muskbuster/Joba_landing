@@ -23,7 +23,7 @@ export default function Logger() {
 
      
       <div className="h1">
-      You need to connect your wallet first
+          You need to connect your wallet first
       </div>
       <p className="h2">
       To become a talent on joba, you’re required to connect to your metamask wallet  to enable access
@@ -37,10 +37,13 @@ export default function Logger() {
   else{
     return (
       <main>
-        <p className="h1">
+        <div>
+          
+        <div className="h1">
         {title}
-        </p>
+        </div>
         <button className='btn1' onClick={handleClick}>{buttonLabel}</button>
+        </div>
         </main>
     );
   }
