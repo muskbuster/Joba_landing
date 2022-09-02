@@ -12,17 +12,18 @@ function App() {
     return (
       <>
      
-      {/* <BrowserRouter>
+       <BrowserRouter>
       <Routes>
       <Route path="/" element={<Navbar/>}>
         <Route path="/" element={<Homepage />}/>
         <Route path="/homepage" element={<Homepage />}/>
         <Route path="/invoice" element={<Invoice />}/>
         <Route path="/login" element={<Logger/>}/>
+        <Route path="/projects" element={<Project/>}/>
         </Route>
       </Routes>
-    </BrowserRouter>  */}
-    <Project/>
+    </BrowserRouter>  
+    
     </>
    
   );

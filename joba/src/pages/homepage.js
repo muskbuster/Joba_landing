@@ -58,7 +58,8 @@ function Homepage() {
             className={styles.lastSectionImage}
             alt=""
             src={rdhero}
-          /><Link to='/invoice'>
+          />
+          <Link to='/login'>
           <Button className={styles.button2} variant="light">
             I want to earn
           </Button>

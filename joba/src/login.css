@@ -25,6 +25,96 @@ line-height: 130%;
 
 color: #353535;
 }
+.ih1{position: absolute;
+    width: 137px;
+    height: 38px;
+    left: 76px;
+    top: 136px;
+    
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    /* or 38px */
+    
+    text-align: center;
+    
+    /* Joba/primary-colour/400-main */
+    
+    color: #021E2D;
+    }
+    .ih2{
+        position: absolute;
+width: 158px;
+height: 24px;
+left: 65px;
+top: 174px;
+
+/* Joba/button-text/semi-bold */
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+
+/* Joba/Grey/300 */
+
+color: #6C6C6C;
+    }
+    .box2{
+        box-sizing: border-box;
+
+position: absolute;
+width: 288px;
+height: 234px;
+left: 728px;
+top: 239px;
+
+background: #FFFFFF;
+/* Joba/Grey/25 */
+
+border: 1px solid #DCDCDC;
+border-radius: 8px;
+
+    }
+.h3{
+    position: absolute;
+width: 227px;
+height: 38px;
+left: 607px;
+top: 159px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 160%;
+/* or 38px */
+
+text-align: center;
+
+color: #000000;
+
+}
+.box1{
+    box-sizing: border-box;
+
+position: absolute;
+width: 288px;
+height: 234px;
+left: 424px;
+top: 239px;
+
+background: #FFFFFF;
+/* Joba/Grey/25 */
+
+border: 1px solid #DCDCDC;
+border-radius: 8px;
+}
 
 
 .h2{
@@ -51,26 +141,22 @@ text-align: center;
 color: #131212;
 
 }
-.btn1{
-    /* Button */
-
-
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 14px 32px;
-gap: 100px;
-flex-direction: column;
-position: absolute;
-width: 182px;
-height: 52px;
-left: 630px;
-top: 370px;
-text-emphasis-color:white;
-/* Joba/Blue-gradient */
-
-background: linear-gradient(92.76deg, #4C5ACD 50.52%, #F598AA 150.68%, #FDDFD0 168.67%);
-border-radius: 8p
+.btn2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 48px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 310px;
+    height: 65px;
+    left: 565px;
+    top: 523px;
+    text-emphasis-color:white;
+    /* Joba/Blue-gradient */
+    
+    background: linear-gradient(92.76deg, #4C5ACD 50.52%, #F598AA 150.68%, #FDDFD0 168.67%);
+    border-radius: 8px;
 }

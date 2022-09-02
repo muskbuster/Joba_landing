@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import "./projects.css";
+import { Link } from 'react-router-dom'
 import hero from "/workspace/init/joba/src/hero3.png";
 export default function Project() {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -10,7 +11,7 @@ export default function Project() {
   return (
     <>
     <div className="header">
-      create invoice
+      create Project
     </div>
     <form onSubmit={handleSubmit(onSubmit)} className="pnvoicebox">
       <div className="content">
@@ -39,11 +40,18 @@ export default function Project() {
       </label>
       <label className='pnitholder'> 
       <label className='pmountholder'> Project Invoice
-      <input type="text" className='pmount' placeholder="project Invoice" {...register("project Invoice", {})} />
+      <select className='pmount' placeholder="project Invoice" {...register("project Invoice", {})} >
+        <option value="invoice1">invoice 1</option>
+        <option value="invoice2">invoice 2</option>
+        <option value="invoice3">invoice 3</option>
+        </select>
       </label>
+      <Link to='/invoice'>
       <label className='purrencyholder'>
-      <button className='purrency'> create Invoice </button>
+        
+      <button className='purrency'> create new Invoice </button>
       </label>
+      </Link>
       </label>
       <label className='pizzaholder'> Role
       <input type="text" className="pizza" placeholder="Role" {...register("Role", {})} />
@@ -51,7 +59,7 @@ export default function Project() {
       <label className='dataholder'>
       <textarea className='pescription'{...register("Description", {})} />
         </label>
-      <input type="submit" />
+      <input className=" submit" placeholder='Create project' type="submit" />
     </form>
     </>
   );

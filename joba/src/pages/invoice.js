@@ -75,7 +75,7 @@ export default function Invoice() {
         Start date
       <input
       className="strttm"
-        type="datetime"
+        type="datetime-local"
         placeholder="start date"
         {...register("start date", {})}
       />
@@ -84,14 +84,14 @@ export default function Invoice() {
         end date
       <input
       className="endtm"
-        type="datetime"
+        type="datetime-local"
         placeholder="end date"
         {...register("end date", {})}
       />
       </label>
-     <label className="submit">
+     <label >
       create invoice
-      <input type="submit"/>
+      <input className="submit" type="submit"/>
       </label>
     </form>
     </>

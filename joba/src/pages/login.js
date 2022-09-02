@@ -2,11 +2,12 @@ import React from 'react';
 import { login, logout } from '/workspace/init/joba/src/utils.js';
 import '/workspace/init/joba/src/login.css';
 import 'regenerator-runtime/runtime';
+import { Link } from 'react-router-dom';
 
 export default function Logger() {
   const isConnected = window.walletConnection.isSignedIn();
 
-  const title = isConnected ? `Connected, ${window.accountId}` : 'Not connected';
+  const title = isConnected ? "choose your profile" : 'Not connected';
   const buttonLabel = isConnected ? 'Disconnect' : 'Connect';
 
   const handleClick = () => {
@@ -29,7 +30,7 @@ export default function Logger() {
       To become a talent on joba, you’re required to connect to your metamask wallet  to enable access
       </p>
       
-        <button className='btn1' onClick={handleClick}>{buttonLabel}</button>
+        <button className='btn2' onClick={handleClick}>{buttonLabel}</button>
         </div>
     </main>
   )
@@ -39,10 +40,30 @@ export default function Logger() {
       <main>
         <div>
           
-        <div className="h1">
+        <div className="h3">
         {title}
         </div>
-        <button className='btn1' onClick={handleClick}>{buttonLabel}</button>
+        <Link to="/projects">
+        <button className="box1">
+        <div >
+          <div className="ih1">
+            I am talent
+          </div>
+          <div className="ih2">
+          I am looking for roles  </div>
+        </div>
+        </button>
+        </Link>
+        <button className="box2">
+        <div>
+        <div className="ih1">
+          I am builder
+          </div>
+          <div className="ih2">
+          I am looking to hire  </div>
+        </div>
+        </button>
+        <button className='btn2' onClick={handleClick}>{buttonLabel}</button>
         </div>
         </main>
     );
