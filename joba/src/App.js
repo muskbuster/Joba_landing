@@ -11,8 +11,8 @@ import Project from "./pages/projects";
 function App() {
     return (
       <>
-{/*      
-      <BrowserRouter>
+     
+      {/* <BrowserRouter>
       <Routes>
       <Route path="/" element={<Navbar/>}>
         <Route path="/" element={<Homepage />}/>
@@ -21,7 +21,7 @@ function App() {
         <Route path="/login" element={<Logger/>}/>
         </Route>
       </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter>  */}
     <Project/>
     </>
    

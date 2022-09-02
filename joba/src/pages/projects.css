@@ -1,19 +1,49 @@
-.invoicebox{
+.pnvoicebox{
     box-sizing: border-box;
 flex: auto;
 position: relative;
 width: 794px;
-height: 1173px;
+height: 1073px;
 left: 323px;
 top: 221px;
 
 background: #FFFFFF;
 /* Joba/Grey/25 */
 
-border: 1px solid #DCDCDC;
-
+border: 1px solid #DCDCDC;}
+.pizzaholder{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 444px;
+    height: 78px;
+    left: 166px;
+    top: 762px;
+    
 }
-.walletholder{
+.pizza{
+    box-sizing: border-box;
+
+    width: 444px;
+    height: 48px;
+    
+    background: #FFFFFF;
+    /* Joba/Grey/50 */
+    
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.palletholder{
     display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -27,7 +57,7 @@ left: 166px;
 top: 342px;
 
 }
-.wallet{
+.pallet{
     box-sizing: border-box;
 
 width: 444px;
@@ -45,7 +75,7 @@ flex: none;
 order: 1;
 flex-grow: 0;
 }
-.descriptionholder{
+.pescriptionholder{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -56,10 +86,24 @@ flex-grow: 0;
     width: 444px;
     height: 78px;
     left: 166px;
-    top: 514px;
+    top: 484px;
     
 }
-.description{
+.dataholder{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 444px;
+    height: 78px;
+    left: 166px;
+    top: 884px;
+    
+}
+.pescription{
     box-sizing: border-box;
 
     width: 444px;
@@ -98,7 +142,7 @@ line-height: 130%;
 
 color: #353535;
 }
-.amountholder{
+.pmountholder{
     position: absolute;
 width: 205px;
 height: 78px;
@@ -117,10 +161,10 @@ position: absolute;
 width: 158px;
 height: 48px;
 /* Joba/primary-colour/500 */
-background: #021926;
+background: #1f1e1e;
 border-radius: 8px;
 }
-.currency{
+.purrency{
     box-sizing: border-box;
     
     position: absolute;
@@ -128,14 +172,13 @@ border-radius: 8px;
     height: 48px;
     left: 0px;
     top: 30px;
-    
-    background: #000000;
+    background: #9b9a9a;
     /* Joba/Grey/50 */
     
     border: 1px solid #C4C4C4;
     border-radius: 4px;
 }
-.amount{
+.pmount{
     box-sizing: border-box;
     
 position: absolute;
@@ -150,21 +193,21 @@ background: #FFFFFF;
 border: 1px solid #C4C4C4;
 border-radius: 4px;
 }
-.currencyholder{
+.purrencyholder{
     position: absolute;
     width: 158px;
     height: 48px;
 left: 239px;
 top: 0px;
 }
-.unitholder{
+.pnitholder{
     position: absolute;
 width: 443px;
 height: 78px;
 left: 166px;
 top: 654px;
 }
-.strtbox{
+.ptrtbox{
     display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -178,7 +221,7 @@ left: 166px;
 top: 758px;
 
 }
-.endbox{
+.pndbox{
     display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -192,8 +235,8 @@ left: 404px;
 top: 758px;
 
 }
-.endtm,
-.strttm{
+.pndtm,
+.ptrttm{
     box-sizing: border-box;
 
 width: 204px;

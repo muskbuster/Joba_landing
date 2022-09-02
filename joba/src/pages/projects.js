@@ -8,7 +8,11 @@ export default function Project() {
   console.log(errors);
   
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="invoicebox">
+    <>
+    <div className="header">
+      create invoice
+    </div>
+    <form onSubmit={handleSubmit(onSubmit)} className="pnvoicebox">
       <div className="content">
       Lonkie agency 
       1901 Thornridge Cir. Shiloh, Hawaii 81063
@@ -27,24 +31,28 @@ export default function Project() {
         </label>
         <img className="imgholder" src={hero}/>
       </div>
-      <label className='walletholder'> Project name
-      <input className='wallet' type="text" placeholder="Project name" {...register("Project name", {})} />
+      <label className='palletholder'> Project name
+      <input className='pallet' type="text" placeholder="Project name" {...register("Project name", {})} />
       </label>
-      <label className='descriptionholder'> Project Owner
-      <input type="text" className='description' placeholder="Project owner" {...register("Project owner", {})} />
+      <label className='pescriptionholder'> Project Owner
+      <input type="text" className='pescription' placeholder="Project owner" {...register("Project owner", {})} />
       </label>
-      <label className='unitholder'> 
-      <label className='amountholder'> Project Invoice
-      <input type="text" className='amount' placeholder="project Invoice" {...register("project Invoice", {})} />
+      <label className='pnitholder'> 
+      <label className='pmountholder'> Project Invoice
+      <input type="text" className='pmount' placeholder="project Invoice" {...register("project Invoice", {})} />
       </label>
-      <label className='currencyholder'>
-      <button className='currency'> create Invoice </button>
+      <label className='purrencyholder'>
+      <button className='purrency'> create Invoice </button>
       </label>
       </label>
-      <input type="text" placeholder="Role" {...register("Role", {})} />
-      <textarea {...register("Description", {})} />
-
+      <label className='pizzaholder'> Role
+      <input type="text" className="pizza" placeholder="Role" {...register("Role", {})} />
+      </label>
+      <label className='dataholder'>
+      <textarea className='pescription'{...register("Description", {})} />
+        </label>
       <input type="submit" />
     </form>
+    </>
   );
 }
