@@ -95,12 +95,82 @@ height: 65px;
 left: 120px;
 top: 548px;
 }
-.frameFormGroup {
+.font1{
   position: absolute;
-  width: 322px;
-  height: 88px;
-  left: 120px;
-  top: 548px;
+width: 149px;
+height: 26px;
+left: 24px;
+top: 19px;
+
+/* Joba/body-text/regular/16px */
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+/* identical to box height, or 26px */
+
+
+/* Joba/Grey/200 */
+
+color: #8A8A8A;
+
+}
+.font2{
+  
+width: 118px;
+height: 25px;
+
+/* Joba/button-text/semi-bold */
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.formarea{
+  box-sizing: border-box;
+  font-size: 24px;
+
+position: absolute;
+width: 322px;
+height: 65px;
+left: 120px;
+top: 548px;
+
+background: #FFFFFF;
+/* Joba/Grey/25 */
+
+border: 1px solid #DCDCDC;
+border-radius: 8px;
+}
+.frameFormGroup {
+  box-sizing: border-box;
+
+position: absolute;
+width: 322px;
+height: 65px;
+left: 120px;
+top: 548px;
+
+background: #FFFFFF;
+/* Joba/Grey/25 */
+
+border: 1px solid #DCDCDC;
+border-radius: 8px;
 }
 .heroSectionDiv,
 .joba02Icon {
@@ -180,6 +250,22 @@ top: 548px;
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.subtton1{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 14px 48px;
+gap: 10px;
+
+position: absolute;
+width: 214px;
+height: 65px;
+left: 452px;
+top: 548px;
+
+background: linear-gradient(92.76deg, #4C5ACD 50.52%, #F598AA 150.68%, #FDDFD0 168.67%);
+border-radius: 8px;
 }
 .loremIpsumDolorSitAmetCo {
   position: absolute;

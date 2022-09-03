@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "firebase": "^9.9.4",
     "near-api-js": "^1.0.0",
     "near-cli": "^3.4.2"
   }

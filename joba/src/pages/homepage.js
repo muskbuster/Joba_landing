@@ -1,15 +1,35 @@
-import { FunctionComponent } from "react";
+import {useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form, Col} from "react-bootstrap";
 import styles from "/workspace/init/joba/src/App.module.css";
+import { useForm } from "react-hook-form";
 import logo from "/workspace/init/joba/src/joba.png"
 import hero from "/workspace/init/joba/src/hero1.png"
 import ndhero from "/workspace/init/joba/src/hero2.png"
+import { db } from "/workspace/init/joba/src/config/firebaseConfig.js";
 import rdhero from "/workspace/init/joba/src/hero3.png" 
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function Homepage() {
+    const [email, setEmail] = useState("");
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+  
+      db.collection("Waitlist")
+        .add({
+          email: email
+        })
+        .then(() => {
+          alert("You are added to the waitlist");
+        })
+        .catch((error) => {
+          alert(error.message);
+        });
+  
+      setEmail("");
+    };
 
 
     return (
@@ -25,13 +45,23 @@ function Homepage() {
          
           <div className={styles.gLOBALIZATION30Div}>GLOBALIZATION 3.0</div>
           <img className={styles.heroImageIcon} alt="" src={hero} />
-          <Button className={styles.button1} variant="primary">
+          {/* <Button className={styles.button1} variant="primary">
             Join the waitlist
-          </Button>
+          </Button> */}
           
-          <Form.Group className={styles.frameFormGroup}>
+          {/* <Form.Group className={styles.frameFormGroup}>
             <Form.Control type="text" placeholder="Enter mail address" />
-          </Form.Group>
+          </Form.Group> */}
+          <form  onSubmit={handleSubmit}>
+          <input
+         placeholder="Enter mail address"
+        value={email}
+        size="sm"
+        className={styles.formarea} 
+        onChange={(e) => setEmail(e.target.value)}/>
+        <button
+        type="submit" className={styles.subtton1} > <div className={styles.font2}>Join the waitlist</div></button>
+          </form>
         </div>
         <div className={styles.subsectionDiv}>
           <b className={styles.builtByBuildersForBuilder}>
