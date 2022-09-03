@@ -3,7 +3,6 @@ import { login, logout } from '/workspace/init/joba/src/utils.js';
 import '/workspace/init/joba/src/login.css';
 import 'regenerator-runtime/runtime';
 import { Link } from 'react-router-dom';
-
 export default function Logger() {
   const isConnected = window.walletConnection.isSignedIn();
 

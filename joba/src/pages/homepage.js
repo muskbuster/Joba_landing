@@ -4,6 +4,7 @@ import { Button, Form, Col} from "react-bootstrap";
 import styles from "/workspace/init/joba/src/App.module.css";
 import { useForm } from "react-hook-form";
 import logo from "/workspace/init/joba/src/joba.png"
+import { login, logout } from '/workspace/init/joba/src/utils.js';
 import hero from "/workspace/init/joba/src/hero1.png"
 import ndhero from "/workspace/init/joba/src/hero2.png"
 import { db } from "/workspace/init/joba/src/config/firebaseConfig.js";
@@ -13,12 +14,13 @@ import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function Homepage() {
     const [email, setEmail] = useState("");
-
+    const isConnected = window.walletConnection.isSignedIn();
+    const wallet =`${window.accountId}`
     const handleSubmit = (e) => {
       e.preventDefault();
   
-      db.collection("Waitlist")
-        .add({
+      db.collection("Waitlist").doc(wallet)
+        .set({
           email: email
         })
         .then(() => {
