@@ -231,6 +231,11 @@ height: 48px;
 left: 591px;
 top: 138px;
 }
+.invfont{
+    width: 155px;
+height: 48px;
+    font-size: 12px;
+}
 .userdetails{
     display: flex;
 flex-direction: row;

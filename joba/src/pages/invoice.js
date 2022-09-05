@@ -3,22 +3,56 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import "./invoice.css";
 import hero from "/workspace/init/joba/src/hero3.png";
-
+import { db } from "/workspace/init/joba/src/config/firebaseConfig.js";
+import {useState} from "react";
+import { login, logout } from '/workspace/init/joba/src/utils.js';
 export default function Invoice() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors }
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(errors);
+
+  const [walletaddress, setWalletaddress] = useState("");
+  const [description, setDescription] = useState("");
+  const [amount, setAmount] = useState("");
+  const [currency, setCurrency] = useState("");
+  const [start, setStart] = useState("");
+  const [end, setEnd] = useState("");
+  const [id, setId] = useState("");
+  
+  const isConnected = window.walletConnection.isSignedIn();
+  const wallet =`${window.accountId}`
+  const invID= id
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    db.collection(wallet).doc("invoice"+invID)
+      .set({
+        wallet: walletaddress,
+        description: description,
+        amount: amount,
+        currency: currency,
+        startdate: start,
+        enddate: end,
+      })
+      .then(() => {
+        alert("Invoice created");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+
+    setWalletaddress("");
+    setDescription("");
+    setAmount("");
+    setCurrency("");
+    setStart("");
+    setEnd("");
+    setId("");
+
+  };
 
   return (
     <>
     <div className="header">
       create invoice
     </div>
-    <form onSubmit={handleSubmit(onSubmit)} className="invoicebox">
+    <form onSubmit={handleSubmit} className="invoicebox">
       <div className="content">
       Lonkie agency 
       1901 Thornridge Cir. Shiloh, Hawaii 81063
@@ -28,7 +62,14 @@ export default function Invoice() {
       valentinekings@gmail.com 
       </div>
       <div className="invdetails">
-      Invoice #02
+      <input
+        value={id}
+        className="invfont"
+        type="text"
+        size="sm"
+        placeholder="enter a number of your choice"
+        onChange={(e) => setId(e.target.value)}
+      />
       Issued on June 30,2022
       </div>
       <div className="userdetails">
@@ -41,30 +82,32 @@ export default function Invoice() {
         wallet address
       <input
         className="wallet"
+        value={walletaddress}
         type="text"
         placeholder="wallet address"
-        {...register("wallet address", { required: true, pattern: /.near/i })}
+        onChange={(e) => setWalletaddress(e.target.value)}
       />
       </label>
       <label className="descriptionholder">
         description
-      <textarea className="description"{...register("description ", {})} />
+      <textarea className="description" value={description} onChange={(e) => setDescription(e.target.value)} />
       </label>
       <label className="unitholder">
       <label className="amountholder">
         amount
       <input
         type="number"
+        value={amount}
         className="amount"
         placeholder="weekly amount"
 
-        {...register("weekly amount", {})}
+        onChange={(e) => setAmount(e.target.value)}
 
       />
       </label>
       <label className="currencyholder">
         invoice currency
-      <select className=" currency" {...register("invoice currency")}>
+      <select className=" currency" value={currency} onChange={(e) => setCurrency(e.target.value)} >
         <option value="USD">USD</option>
         <option value=" EUR"> EUR</option>
         <option value=" GBP"> GBP</option>
@@ -75,18 +118,20 @@ export default function Invoice() {
         Start date
       <input
       className="strttm"
+      value={start}
         type="datetime-local"
         placeholder="start date"
-        {...register("start date", {})}
+        onChange={(e) => setStart(e.target.value)}
       />
       </label>
       <label className="endbox">
         end date
       <input
       className="endtm"
+      value={end}
         type="datetime-local"
         placeholder="end date"
-        {...register("end date", {})}
+        onChange={(e) => setEnd(e.target.value)}
       />
       </label>
      <label >
