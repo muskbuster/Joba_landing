@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "/workspace/init/joba/src/components/navbar.js";
 import Invoice from "/workspace/init/joba/src/pages/invoice.js";
 import Logger from "./pages/login";
-import Test from "./pages/flexboxtest";
 import Project from "./pages/projects";
 function App() {
     return (
@@ -22,6 +21,8 @@ function App() {
         <Route path="/projects" element={<Project/>}/>
         </Route>
       </Routes>
+      
+
     </BrowserRouter>  
     
     </>
