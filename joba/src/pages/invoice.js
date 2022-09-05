@@ -21,7 +21,7 @@ export default function Invoice() {
   const invID= id
   const handleSubmit = (e) => {
     e.preventDefault();
-    db.collection(wallet).doc("invoice"+invID)
+    db.collection(wallet).doc("invoices").collection("invoices").doc("invoice"+invID)
       .set({
         wallet: walletaddress,
         description: description,
@@ -108,6 +108,7 @@ export default function Invoice() {
       <label className="currencyholder">
         invoice currency
       <select className=" currency" value={currency} onChange={(e) => setCurrency(e.target.value)} >
+        <option value="">select</option>
         <option value="USD">USD</option>
         <option value=" EUR"> EUR</option>
         <option value=" GBP"> GBP</option>
