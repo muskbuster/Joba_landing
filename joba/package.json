@@ -10,6 +10,7 @@
     "bootstrap-css": "^4.0.0-alpha.5",
     "firebase": "^8.10.1",
     "flexbox-react": "^4.4.0",
+    "framer-motion": "^7.2.1",
     "near-api-js": "^1.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
