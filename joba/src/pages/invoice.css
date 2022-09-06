@@ -204,6 +204,33 @@ top: 988px;
 
 background: linear-gradient(92.76deg, #4C5ACD 50.52%, #F598AA 150.68%, #FDDFD0 168.67%);
 }
+
+.submit1{
+        /* Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14px 32px;
+gap: 10px;
+
+position: absolute;
+width: 42px;
+height: 52px;
+left: 666px;
+top: 988px;
+
+/* Joba/Blue-gradient */
+
+background: black;
+}
+.fontstyle{
+ color: rgb(255, 255, 255);
+}
 .content{
     display: flex;
 flex-direction: column;

@@ -1,6 +1,7 @@
 
 import React from "react";
 import { useForm } from "react-hook-form";
+import { Link } from 'react-router-dom'
 import "./invoice.css";
 import hero from "/workspace/init/joba/src/hero3.png";
 import { db } from "/workspace/init/joba/src/config/firebaseConfig.js";
@@ -31,7 +32,7 @@ export default function Invoice() {
         enddate: end,
       })
       .then(() => {
-        alert("Invoice created");
+        alert("Invoice created press continue to proceed");
       })
       .catch((error) => {
         alert(error.message);
@@ -137,7 +138,8 @@ export default function Invoice() {
       </label>
      <label >
       create invoice
-      <input className="submit" type="submit"/>
+      <input className="submit" placeholder="Create invoice" type="submit"/>
+      <Link  to="/projects"><button className="submit1"><div className="fontstyle"> continue</div> </button> </Link>
       </label>
     </form>
     </>
