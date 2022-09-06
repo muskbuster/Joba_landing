@@ -27,7 +27,7 @@ export default function Project() {
         description: description
       })
       .then(() => {
-        alert("Invoice created press continue to proceed");
+        alert("Project created press ok to proceed");
       })
       .then(() => {
         navigate('/homepage');
@@ -78,6 +78,7 @@ export default function Project() {
       <label className='pnitholder'> 
       <label className='pmountholder'> Project Invoice
       <select value={invoice} onChange={(e) => setInvoice(e.target.value)} className='pmount' placeholder="project Invoice"  >
+      <option value="">select</option>
         <option value="invoice1">invoice 1</option>
         <option value="invoice2">invoice 2</option>
         <option value="invoice3">invoice 3</option>
