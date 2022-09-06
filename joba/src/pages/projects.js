@@ -1,19 +1,56 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import "./projects.css";
-import { Link } from 'react-router-dom'
+import { db } from "/workspace/init/joba/src/config/firebaseConfig.js";
+import { Link , useNavigate} from 'react-router-dom'
+import {useState} from "react";
 import hero from "/workspace/init/joba/src/hero3.png";
 export default function Project() {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
-  console.log(errors);
+  const isConnected = window.walletConnection.isSignedIn();
+  const wallet =`${window.accountId}`
+  const navigate = useNavigate();
+  const [name, setName] = useState("");
+  const [owner, setOwner] = useState("");
+  const [invoice, setInvoice] = useState("");
+  const [role, setRole] = useState("");
+  const [description, setDescription] = useState("");
+  
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    db.collection(wallet).doc("records").collection("projects").doc(name)
+      .set({
+        name: name,
+        owner: owner,
+        invoice: invoice,
+        role: role,
+        description: description
+      })
+      .then(() => {
+        alert("Invoice created press continue to proceed");
+      })
+      .then(() => {
+        navigate('/homepage');
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+      
+      setName();
+      setOwner();
+      setInvoice();
+      setRole();
+      setDescription();
+
+  };
+
   
   return (
     <>
     <div className="header">
       create Project
     </div>
-    <form onSubmit={handleSubmit(onSubmit)} className="pnvoicebox">
+    <form onSubmit={handleSubmit} className="pnvoicebox">
       <div className="content">
       Lonkie agency 
       1901 Thornridge Cir. Shiloh, Hawaii 81063
@@ -33,14 +70,14 @@ export default function Project() {
         <img className="imgholder" src={hero}/>
       </div>
       <label className='palletholder'> Project name
-      <input className='pallet' type="text" placeholder="Project name" {...register("Project name", {})} />
+      <input  value={name} onChange={(e) => setName(e.target.value)} className='pallet' type="text" placeholder="Project name"  />
       </label>
       <label className='pescriptionholder'> Project Owner
-      <input type="text" className='pescription' placeholder="Project owner" {...register("Project owner", {})} />
+      <input value={owner} onChange={(e) => setOwner(e.target.value)} type="text" className='pescription' placeholder="Project owner"  />
       </label>
       <label className='pnitholder'> 
       <label className='pmountholder'> Project Invoice
-      <select className='pmount' placeholder="project Invoice" {...register("project Invoice", {})} >
+      <select value={invoice} onChange={(e) => setInvoice(e.target.value)} className='pmount' placeholder="project Invoice"  >
         <option value="invoice1">invoice 1</option>
         <option value="invoice2">invoice 2</option>
         <option value="invoice3">invoice 3</option>
@@ -54,10 +91,10 @@ export default function Project() {
       </Link>
       </label>
       <label className='pizzaholder'> Role
-      <input type="text" className="pizza" placeholder="Role" {...register("Role", {})} />
+      <input type="text" onChange={(e) => setRole(e.target.value)} value={role}   className="pizza" placeholder="Role" />
       </label>
-      <label className='dataholder'>
-      <textarea className='pescription'{...register("Description", {})} />
+      <label className='dataholder'>description
+      <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} className='pescription' />
         </label>
       <input className=" submit" placeholder='Create project' type="submit" />
     </form>

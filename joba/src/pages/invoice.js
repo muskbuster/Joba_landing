@@ -22,7 +22,7 @@ export default function Invoice() {
   const invID= id
   const handleSubmit = (e) => {
     e.preventDefault();
-    db.collection(wallet).doc("invoices").collection("invoices").doc("invoice"+invID)
+    db.collection(wallet).doc("records").collection("invoices").doc("invoice"+invID)
       .set({
         wallet: walletaddress,
         description: description,
