@@ -1,14 +1,14 @@
 
 import React from "react";
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom'
+import { Link , useNavigate} from 'react-router-dom'
 import "./invoice.css";
 import hero from "/workspace/init/joba/src/hero3.png";
 import { db } from "/workspace/init/joba/src/config/firebaseConfig.js";
 import {useState} from "react";
 import { login, logout } from '/workspace/init/joba/src/utils.js';
 export default function Invoice() {
-
+  const navigate = useNavigate();
   const [walletaddress, setWalletaddress] = useState("");
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState("");
@@ -33,6 +33,9 @@ export default function Invoice() {
       })
       .then(() => {
         alert("Invoice created press continue to proceed");
+      })
+      .then(() => {
+        navigate('/projects');
       })
       .catch((error) => {
         alert(error.message);
@@ -139,7 +142,6 @@ export default function Invoice() {
      <label >
       create invoice
       <input className="submit" placeholder="Create invoice" type="submit"/>
-      <Link  to="/projects"><button className="submit1"><div className="fontstyle"> continue</div> </button> </Link>
       </label>
     </form>
     </>
