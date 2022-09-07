@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from 'react-router-dom';
 import Homepage from "./pages/homepage";
-
+import Dashboard from "./pages/dashboard";
 import Navbar from "/workspace/init/joba/src/components/navbar.js";
 import Invoice from "/workspace/init/joba/src/pages/invoice.js";
 import {
@@ -59,7 +59,7 @@ function App() {
     return (
       <>
      
-       <BrowserRouter>
+       {/* <BrowserRouter>
       <Routes>
       <Route element={<AnimationLayout />}>
       <Route path="/" element={<Navbar/>}>
@@ -73,7 +73,8 @@ function App() {
       </Routes>
       
 
-    </BrowserRouter>  
+    </BrowserRouter>   */}
+    <Dashboard/>
     
     </>
    

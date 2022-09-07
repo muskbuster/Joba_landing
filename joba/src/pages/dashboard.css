@@ -1,0 +1,150 @@
+.sidebar{
+    position: absolute;
+width: 182px;
+height: 1250px;
+left: 0px;
+top: 0px;
+
+/* Joba/primary-colour/900 */
+
+background: #000609;
+}
+.logoholder{
+    position: absolute;
+width: 145px;
+height: 64px;
+left: 14px;
+top: 10px;
+
+}
+.home{
+    position: absolute;
+width: 58px;
+height: 31px;
+left: 230px;
+top: 138px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 155%;
+/* identical to box height, or 31px */
+
+letter-spacing: -0.01em;
+
+color: #000000;
+
+}
+.walletbalance{
+    box-sizing: border-box;
+
+position: absolute;
+width: 162px;
+height: 32px;
+left: 1165px;
+top: 135px;
+
+background: #FFFFFF;
+border: 1px solid #DBDBDB;
+}
+.projectint{
+    position: absolute;
+width: 327px;
+height: 31px;
+left: 237px;
+top: 627px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 155%;
+/* identical to box height, or 31px */
+
+letter-spacing: -0.01em;
+
+/* Joba/Grey/500 - Body text colour */
+
+color: #424242;
+}
+.sph{
+position: absolute;
+width: 314px;
+height: 177px;
+left: 282px;
+top: 711px;
+
+}
+.projectshold{
+    position: absolute;
+width: 1095px;
+height: 443px;
+left: 232px;
+top: 684px;
+
+background: #F5F5F5;
+border-radius: 8px 8px 0px 0px;
+}
+.successful{
+    position: absolute;
+width: 354px;
+height: 350px;
+border-radius: 4%;
+left: 232px;
+top: 224px;
+background-color: #f7f7f7;
+}
+.line{
+    position: absolute;
+width: 314px;
+height: 0px;
+left: 20px;
+top: 63px;
+
+/* Joba/Success-colour/1 */
+
+background: #219150;
+/* Joba/Success-colour/1 */
+
+border: 3px solid #219150;
+}
+.line1{
+    position: absolute;
+    width: 314px;
+    height: 0px;
+    left: 20px;
+    top: 63px;
+    
+    border: 3px solid #FFA500;
+}
+.refund{
+    position: absolute;
+width: 355px;
+height: 350px;
+border-radius: 4%;
+left: 602px;
+top: 224px;
+background-color: #f7f7f7;
+}
+.disputed
+{
+    position: absolute;
+    width: 354px;
+    height: 350px;
+    left: 973px;
+    border-radius: 4%;
+    top: 224px;
+    background-color: #f7f7f7;
+}
+.line2{
+    position: absolute;
+width: 314px;
+height: 0px;
+left: 20px;
+top: 63px;
+
+background: #800080;
+border: 3px solid #5030E5;
+
+}
