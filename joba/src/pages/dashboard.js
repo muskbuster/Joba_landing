@@ -24,6 +24,21 @@ export default function Dashboard(){
         Home
     </div>
 </div>
+<div className="homebut1">
+    <div className="fonty">
+        Earn
+    </div>
+</div>
+<div className="homebut2">
+    <div className="fonty">
+        Messages
+    </div>
+</div>
+<div className="homebut3">
+    <div className="fonty">
+        Settings
+    </div>
+</div>
 </div>
 <div className="home"> Home </div>
 <div className="walletbalance">balance</div>

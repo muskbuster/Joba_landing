@@ -41,6 +41,42 @@ top: 218px;
 background: #021926;
 border-radius: 8px;
 }
+.homebut1{
+    position: absolute;
+width: 151px;
+height: 42px;
+left: 6px;
+top: 270px;
+
+/* Joba/primary-colour/500 */
+
+background:black;
+border-radius: 8px;
+}
+.homebut2{
+    position: absolute;
+width: 151px;
+height: 42px;
+left: 6px;
+top: 334px;
+
+/* Joba/primary-colour/500 */
+
+background:black;
+border-radius: 8px;
+}
+.homebut3{
+    position: absolute;
+width: 151px;
+height: 42px;
+left: 6px;
+top: 386px;
+
+/* Joba/primary-colour/500 */
+
+background:black;
+border-radius: 8px;
+}
 .logoholder{
     position: absolute;
 width: 145px;
