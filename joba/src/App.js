@@ -59,7 +59,7 @@ function App() {
     return (
       <>
      
-       {/* <BrowserRouter>
+        <BrowserRouter>
       <Routes>
       <Route element={<AnimationLayout />}>
       <Route path="/" element={<Navbar/>}>
@@ -69,12 +69,13 @@ function App() {
         <Route path="/login" element={<Logger/>}/>
         <Route path="/projects" element={<Project/>}/>
         </Route>
+        <Route path="/dashboard" element={<Dashboard/>}/>
         </Route>
       </Routes>
       
 
-    </BrowserRouter>   */}
-    <Dashboard/>
+    </BrowserRouter>   
+    
     
     </>
    

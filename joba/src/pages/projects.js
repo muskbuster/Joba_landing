@@ -30,7 +30,7 @@ export default function Project() {
         alert("Project created press ok to proceed");
       })
       .then(() => {
-        navigate('/homepage');
+        navigate('/dashboard');
       })
       .catch((error) => {
         alert(error.message);
