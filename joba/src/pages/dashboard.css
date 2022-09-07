@@ -9,6 +9,38 @@ top: 0px;
 
 background: #000609;
 }
+.fonty{
+    position: absolute;
+width: 41px;
+height: 18px;
+left: 57px;
+top: 11px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 18px;
+/* identical to box height */
+
+
+/* Joba/secondary-colour/25 */
+
+color: #FFF1CD;
+
+}
+.homebut{
+    position: absolute;
+width: 151px;
+height: 42px;
+left: 6px;
+top: 218px;
+
+/* Joba/primary-colour/500 */
+
+background: #021926;
+border-radius: 8px;
+}
 .logoholder{
     position: absolute;
 width: 145px;

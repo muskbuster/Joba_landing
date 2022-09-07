@@ -19,6 +19,11 @@ export default function Dashboard(){
            </Button>
            </Link></div>
 <img className="logoholder" src={logo} alt="logo" />
+<div className="homebut">
+    <div className="fonty">
+        Home
+    </div>
+</div>
 </div>
 <div className="home"> Home </div>
 <div className="walletbalance">balance</div>

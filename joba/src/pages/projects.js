@@ -23,6 +23,7 @@ export default function Project() {
         name: name,
         owner: owner,
         invoice: invoice,
+        status: "completed",
         role: role,
         description: description
       })
