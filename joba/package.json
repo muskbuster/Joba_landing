@@ -18,7 +18,6 @@
     "react-hook-form": "^7.34.2",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
-    "react-router-transition": "^2.1.0",
     "react-scripts": "5.0.1",
     "regenerator-runtime": "^0.13.9",
     "web-vitals": "^2.1.4"
@@ -46,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "netlify-cli": "^11.5.1"
   }
 }
