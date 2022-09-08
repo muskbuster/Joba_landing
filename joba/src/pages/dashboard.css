@@ -235,6 +235,35 @@ top: 684px;
 background: #F5F5F5;
 border-radius: 8px 8px 0px 0px;
 }
+.m3{
+    box-sizing: border-box;
+
+position: absolute;
+width: 24px;
+height: 24px;
+right: 270px;
+top: 133px;
+
+background: black;
+border: 1px solid #FFFFFF;
+}
+.m2{
+    position: absolute;
+width: 274px;
+height: 36px;
+left: 20px;
+top: 56px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+/* or 150% */
+
+
+color: #787486;
+}
 .near{
 width: 20px;
 height: 20px;

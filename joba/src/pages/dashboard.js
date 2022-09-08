@@ -61,21 +61,55 @@ export default function Dashboard(){
     <div className="m1">
         hello
     </div>
+    <div className="m2">
+    Brainstorming brings team members' diverse experience into play. 
+    </div>
+    <div className="m3">
+    </div>
 </div>
 <div className="sph1"><div className="m1">
 GeegPay Development
-    </div></div>
+    </div>
+    <div className="m2">
+    Brainstorming brings team members' diverse experience into play. 
+    </div>
+    <div className="m3">
+    </div>
+    </div>
 <div className="sph2"><div className="m1">
 NFT Frontend
-    </div></div>
+    </div>
+    <div className="m2">
+    Brainstorming brings team members' diverse experience into play. 
+    </div>
+    <div className="m3">
+    </div>
+    </div>
 <div className="sph3"><div className="m1">
 DeFi
-    </div></div>
+    </div>
+    <div className="m2">
+    Brainstorming brings team members' diverse experience into play. 
+    </div>
+    <div className="m3">
+    </div>
+    </div>
 <div className="sph4"><div className="m1">
 NFT Website
-    </div></div>
+    </div>
+    <div className="m2">
+    Brainstorming brings team members' diverse experience into play. 
+    </div>
+    <div className="m3">
+    </div>
+    </div>
 <div className="sph5"><div className="m1">
 Development
+    </div>
+    <div className="m2">
+    Brainstorming brings team members' diverse experience into play. 
+    </div>
+    <div className="m3">
     </div>
     </div>
 </div>
