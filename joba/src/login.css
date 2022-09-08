@@ -3,7 +3,7 @@
 position: absolute;
 width: 800px;
 height: 65px;
-left: 350px;
+left: 450px;
 display: flex;
 flex-wrap: nowrap;
 flex-direction: column;
@@ -71,7 +71,7 @@ color: #6C6C6C;
 position: absolute;
 width: 288px;
 height: 234px;
-left: 728px;
+left: 828px;
 top: 239px;
 
 background: #FFFFFF;
@@ -85,7 +85,7 @@ border-radius: 8px;
     position: absolute;
 width: 227px;
 height: 38px;
-left: 607px;
+left: 707px;
 top: 159px;
 
 font-family: 'Plus Jakarta Sans';
@@ -106,7 +106,7 @@ color: #000000;
 position: absolute;
 width: 288px;
 height: 234px;
-left: 424px;
+left: 524px;
 top: 239px;
 
 background: #FFFFFF;
@@ -152,7 +152,7 @@ color: #131212;
     position: absolute;
     width: 310px;
     height: 65px;
-    left: 565px;
+    left: 665px;
     top: 523px;
     text-emphasis-color:white;
     /* Joba/Blue-gradient */

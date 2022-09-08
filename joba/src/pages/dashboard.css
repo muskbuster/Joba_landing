@@ -9,6 +9,10 @@ top: 0px;
 
 background: #000609;
 }
+.pagecont{
+    position: absolute;
+  left: 100px;
+}
 .fonty{
     position: absolute;
 width: 41px;
@@ -245,7 +249,7 @@ border-color: #000000;
 position: absolute;
 width: 290px;
 height: 52px;
-left: 848px;
+left: 948px;
 top: 19px;
 
 /* Joba/primary-colour/600 */

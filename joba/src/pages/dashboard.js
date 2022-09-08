@@ -2,8 +2,8 @@ import "../../src/pages/dashboard.css";
 import { Link , useNavigate} from 'react-router-dom';
 import { db } from "/workspace/init/joba/src/config/firebaseConfig.js";
 import {useState} from "react";
-import logo from "/workspace/init/joba/src/pages/ljoba2.png"
-import near from "/workspace/init/joba/src/pages/near.png"
+import logo from "../../src/pages/ljoba2.png"
+import near from "../../src/pages/near.png"
 import { Button, Form, Col} from "react-bootstrap";
 
 export default function Dashboard(){
@@ -11,6 +11,7 @@ export default function Dashboard(){
     const buttonLabel = isConnected ? `${window.accountId}` : 'Connect Wallet';
     return(
 <>
+<div className="pagecont">
 <div className="sidebar">
     <div className="vertical"><Link to="/login">
              <Button  className="walletree" variant="primary">
@@ -62,6 +63,7 @@ export default function Dashboard(){
 <div className="sph3">hello</div>
 <div className="sph4">hello</div>
 <div className="sph5">hello</div>
+</div>
 </div>
 </>
     )
