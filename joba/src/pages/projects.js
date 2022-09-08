@@ -36,7 +36,7 @@ export default function Project() {
       .catch((error) => {
         alert(error.message);
       });
-      
+      const data= [];
       db.collection("Waitlist")
                 .get()
                 .then((querySnapshot) => {
