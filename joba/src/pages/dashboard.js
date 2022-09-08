@@ -1,4 +1,4 @@
-import "/workspace/init/joba/src/pages/dashboard.css";
+import "../../src/pages/dashboard.css";
 import { Link , useNavigate} from 'react-router-dom';
 import { db } from "/workspace/init/joba/src/config/firebaseConfig.js";
 import {useState} from "react";

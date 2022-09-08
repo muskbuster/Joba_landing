@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from 'react-router-dom';
 import Homepage from "./pages/homepage";
 import Dashboard from "./pages/dashboard";
-import Navbar from "/workspace/init/joba/src/components/navbar.js";
-import Invoice from "/workspace/init/joba/src/pages/invoice.js";
+import Navbar from "../src/components/navbar.js";
+import Invoice from "../src/pages/invoice.js";
 import {
   BrowserRouter,
   Routes,
