@@ -14,7 +14,7 @@ export default function Project() {
   const [invoice, setInvoice] = useState("");
   const [role, setRole] = useState("");
   const [description, setDescription] = useState("");
-  
+  const [dataToShow, setData] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
