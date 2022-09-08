@@ -145,7 +145,7 @@ position: absolute;
 width: 314px;
 height: 177px;
 right: 731px;
-
+border-radius: 3%;
 background: #ffffff;
 top: 27px;
 
@@ -155,7 +155,7 @@ top: 27px;
     width: 314px;
     height: 177px;
     right: 731px;
-    
+    border-radius: 3%;
     background: #ffffff;
     top: 27px;
     
@@ -165,7 +165,7 @@ top: 27px;
         width: 314px;
         height: 177px;
         right: 397px;
-        
+        border-radius: 3%;
         background: #ffffff;
         top: 27px;
         
@@ -175,7 +175,7 @@ top: 27px;
         width: 314px;
         height: 177px;
         right: 63px;
-        
+        border-radius: 3%;
         background: #ffffff;
         top: 27px;
 }
@@ -184,7 +184,7 @@ top: 27px;
     width: 314px;
     height: 177px;
     right: 397px;
-    
+    border-radius: 3%;
     background: #ffffff;
     top: 231px;
     
@@ -194,7 +194,7 @@ top: 27px;
         width: 314px;
         height: 177px;
         right: 731px;
-        
+        border-radius: 3%;
         background: #ffffff;
         top: 231px;
         
@@ -219,6 +219,7 @@ color: #0D062D;
             width: 314px;
             height: 177px;
             right: 63px;
+            border-radius: 3%;
             
             background: #ffffff;
             top: 231px;
@@ -237,6 +238,25 @@ border-radius: 8px 8px 0px 0px;
 .near{
 width: 20px;
 height: 20px;
+}
+.m1{
+    position: absolute;
+width: 202px;
+height: 23px;
+left: 42px;
+top: 27px;
+right: 20px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+
+color: #0D062D;
+
 }
 .walletree{
     display: flex;

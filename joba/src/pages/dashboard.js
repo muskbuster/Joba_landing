@@ -57,12 +57,27 @@ export default function Dashboard(){
 </div>
 <div className="projectint">Projects you might be interested in</div>
 <div className="projectshold"> 
-<div className="sph">hello</div>
-<div className="sph1">hello</div>
-<div className="sph2">hello</div>
-<div className="sph3">hello</div>
-<div className="sph4">hello</div>
-<div className="sph5">hello</div>
+<div className="sph">
+    <div className="m1">
+        hello
+    </div>
+</div>
+<div className="sph1"><div className="m1">
+GeegPay Development
+    </div></div>
+<div className="sph2"><div className="m1">
+NFT Frontend
+    </div></div>
+<div className="sph3"><div className="m1">
+DeFi
+    </div></div>
+<div className="sph4"><div className="m1">
+NFT Website
+    </div></div>
+<div className="sph5"><div className="m1">
+Development
+    </div>
+    </div>
 </div>
 </div>
 </>
