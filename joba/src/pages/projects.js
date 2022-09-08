@@ -37,6 +37,18 @@ export default function Project() {
         alert(error.message);
       });
       
+      db.collection("Waitlist")
+                .get()
+                .then((querySnapshot) => {
+                    querySnapshot.forEach((doc) => {
+                        const dat=doc.data();
+                        console.log(dat);
+                    });
+                })
+                .catch((error) => {
+                    console.log("Error getting documents: ", error);
+                });
+
       setName();
       setOwner();
       setInvoice();
