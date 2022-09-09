@@ -115,9 +115,9 @@ function Homepage() {
             egestas gravida diam.
           </div>
           <div className={styles.contactUsDiv}>Contact us:</div>
-          <div className={styles.telegramDiv}>Telegram</div>
-          <div className={styles.discordDiv}>Discord</div>
-          <div className={styles.twitterDiv}>Twitter</div>
+          <a href="https://discord.gg/wkHWPZMs" target="_blank" className={styles.telegramDiv}>Telegram</a>
+          <a href="https://discord.gg/wkHWPZMs" target="_blank" className={styles.discordDiv}><div> Discord</div> </a>
+          <a href="https://discord.gg/wkHWPZMs" target="_blank" className={styles.twitterDiv}>Twitter</a>
           <div className={styles.frameDiv1}>
             <div className={styles.enterYourEmailAddress}>
               Enter your email address
