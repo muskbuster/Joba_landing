@@ -268,6 +268,42 @@ flex: none;
 order: 0;
 flex-grow: 0
 }
+.dot{
+    position: absolute;
+width: 8px;
+height: 8px;
+left: 20px;
+top: 26px;
+border-radius: 100%;
+/* Joba/Success-colour/1 */
+
+background: #219150;
+}
+.dot1{
+    position: absolute;
+width: 8px;
+height: 8px;
+left: 20px;
+top: 26px;
+border-radius: 100%;
+/* Joba/Success-colour/1 */
+
+background:#5030E5;
+}
+
+.dot2{
+    position: absolute;
+width: 8px;
+height: 8px;
+left: 20px;
+top: 26px;
+border-radius: 100%;
+/* Joba/Success-colour/1 */
+
+background: #FFA500;
+}
+
+
 .boxsuc:hover{
     background: #dbdbdb;
 }
@@ -286,9 +322,61 @@ width: 24px;
 height: 24px;
 right: 270px;
 top: 133px;
-
+border-radius: 100%;
 background: black;
 border: 1px solid #FFFFFF;
+}
+.blfont{
+    
+position: absolute;
+width: 58px;
+height: 18px;
+left: 42px;
+top: 7px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+/* identical to box height */
+
+
+/* Joba/primary-colour/400-main */
+
+color: #021E2D;
+
+}
+.comms{
+    position: absolute;
+width: 77px;
+height: 15px;
+left: 147px;
+top: 138px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 15px;
+
+color: #787486;
+}
+.dots{
+    position: absolute;
+width: 18px;
+height: 22px;
+left: 234px;
+bottom: 1px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 19px;
+letter-spacing: -0.07em;
+
+color: #0D062D;
 }
 .m2{
     position: absolute;

@@ -32,6 +32,7 @@ export default function Project() {
       })
       .then(() => {
         navigate('/dashboard');
+        window.location.reload();
       })
       .catch((error) => {
         alert(error.message);

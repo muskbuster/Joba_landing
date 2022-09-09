@@ -8,6 +8,7 @@ import { Button, Form, Col} from "react-bootstrap";
 
 export default function Dashboard(){
     const isConnected = window.walletConnection.isSignedIn();
+    const wallet =`${window.accountId}`
     const buttonLabel = isConnected ? `${window.accountId}` : 'Connect Wallet';
     const [info , setInfo] = useState([]);
     const Frame = ({name}) => {
@@ -17,7 +18,10 @@ export default function Dashboard(){
             <div>
             
                 <div className="boxsuc"> 
-               <p className="textpos">{name}</p>
+               <p className="textpos">{name}
+               <div className="dots">. . .</div>
+               </p>
+               
        
                 </div>
                 </div>
@@ -29,11 +33,12 @@ export default function Dashboard(){
     // the page loads
     window.addEventListener('load', () => {
         Fetchdata();
+
       });
   
     // Fetch the required data using the get() method
     const Fetchdata = ()=>{
-        db.collection("kungfupanda.testnet").doc("records").collection("projects").where("status", "==", "completed").get().then((querySnapshot) => {
+        db.collection(wallet).doc("records").collection("projects").where("status", "==", "completed").get().then((querySnapshot) => {
              
             // Loop through the data and store
             // it in array to display
@@ -43,7 +48,9 @@ export default function Dashboard(){
                   
             });
         })
+    
     }
+   
     return(
 <>
 <div className="pagecont">
@@ -77,8 +84,9 @@ export default function Dashboard(){
 </div>
 </div>
 <div className="home"> Home </div>
-<div className="walletbalance">balance</div>
+<div className="walletbalance"><div className="blfont"> balance</div></div>
 <div className="successful">
+    <div className="dot"></div>
     <div className="line"></div>
     <div className="suc">successful</div>
     <div className="boxsuccontainer">
@@ -92,11 +100,14 @@ export default function Dashboard(){
 </div>
 </div>
 <div className="refund">
+<div className="dot2"></div>
     <div className="line1"></div>
     <div className="suc">Refund</div>
-    <div className="boxsuccontainer">Any refunds that your client requests will show up here.Which you can further take actions by raising a dispute or refunding it</div>
+    
+    <div className="boxsuccontainer">Any refunds that your client requests in the future will show up here.Which you can further take actions by raising a dispute or refunding it</div>
 </div>
 <div className="disputed">
+<div className="dot1"></div>
     <div className="line2"></div>
     <div className="suc">Disputed</div>
     <div className="boxsuccontainer">All disputed projects show up here</div>
@@ -111,6 +122,7 @@ export default function Dashboard(){
     Brainstorming brings team members' diverse experience into play. 
     </div>
     <div className="m3">
+    <div className="comms"> 2 comments</div>
     </div>
 </div>
 <div className="sph1"><div className="m1">
@@ -121,6 +133,7 @@ GeegPay Development
     </div>
     <div className="m3">
     </div>
+    <div className="comms"> 2 comments</div>
     </div>
 <div className="sph2"><div className="m1">
 NFT Frontend
@@ -130,6 +143,7 @@ NFT Frontend
     </div>
     <div className="m3">
     </div>
+    <div className="comms"> 2 comments</div>
     </div>
 <div className="sph3"><div className="m1">
 DeFi
@@ -139,6 +153,7 @@ DeFi
     </div>
     <div className="m3">
     </div>
+    <div className="comms"> 4 comments</div>
     </div>
 <div className="sph4"><div className="m1">
 NFT Website
@@ -148,6 +163,7 @@ NFT Website
     </div>
     <div className="m3">
     </div>
+    <div className="comms"> 9 comments</div>
     </div>
 <div className="sph5"><div className="m1">
 Development
@@ -157,6 +173,7 @@ Development
     </div>
     <div className="m3">
     </div>
+    <div className="comms"> 2 comments</div>
     </div>
 </div>
 </div>
