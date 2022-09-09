@@ -116,14 +116,13 @@ export default function Dashboard(){
 <div className="projectshold"> 
 <div className="sph">
     <div className="m1">
-        hello
+        Joba tokenomics
     </div>
     <div className="m2">
     Brainstorming brings team members' diverse experience into play. 
     </div>
     <div className="m3">
-    <div className="comms"> 2 comments</div>
-    </div>
+    </div> <div className="comms"> 2 comments</div>
 </div>
 <div className="sph1"><div className="m1">
 GeegPay Development
