@@ -9,6 +9,41 @@ import { Button, Form, Col} from "react-bootstrap";
 export default function Dashboard(){
     const isConnected = window.walletConnection.isSignedIn();
     const buttonLabel = isConnected ? `${window.accountId}` : 'Connect Wallet';
+    const [info , setInfo] = useState([]);
+    const Frame = ({name}) => {
+       
+        return (
+            <>
+            <div>
+            
+                <div className="boxsuc"> 
+               <p className="textpos">{name}</p>
+       
+                </div>
+                </div>
+    
+           </>
+        );
+    }
+    // Start the fetch operation as soon as
+    // the page loads
+    window.addEventListener('load', () => {
+        Fetchdata();
+      });
+  
+    // Fetch the required data using the get() method
+    const Fetchdata = ()=>{
+        db.collection("kungfupanda.testnet").doc("records").collection("projects").where("status", "==", "completed").get().then((querySnapshot) => {
+             
+            // Loop through the data and store
+            // it in array to display
+            querySnapshot.forEach(element => {
+                var data = element.data();
+                setInfo(arr => [...arr , data]);
+                  
+            });
+        })
+    }
     return(
 <>
 <div className="pagecont">
@@ -46,14 +81,25 @@ export default function Dashboard(){
 <div className="successful">
     <div className="line"></div>
     <div className="suc">successful</div>
+    <div className="boxsuccontainer">
+    {
+            info.map((data) => (
+            <Frame 
+                   name={data.name} 
+                   />
+            ))
+        }
+</div>
 </div>
 <div className="refund">
     <div className="line1"></div>
     <div className="suc">Refund</div>
+    <div className="boxsuccontainer">Any refunds that your client requests will show up here.Which you can further take actions by raising a dispute or refunding it</div>
 </div>
 <div className="disputed">
     <div className="line2"></div>
     <div className="suc">Disputed</div>
+    <div className="boxsuccontainer">All disputed projects show up here</div>
 </div>
 <div className="projectint">Projects you might be interested in</div>
 <div className="projectshold"> 
@@ -116,4 +162,5 @@ Development
 </div>
 </>
     )
+
 }
