@@ -13,6 +13,34 @@ background: #000609;
     position: absolute;
   left: 100px;
 }
+.icos{
+    position: absolute;
+width: 24px;
+height: 24px;
+left: 16px;
+top: 9px;
+
+}
+.fontyx{
+    position: absolute;
+width: 201px;
+height: 18px;
+left: 24px;
+top: 10px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+/* Joba/secondary-colour/25 */
+
+color: #ffffff;
+
+}
 .fonty{
     position: absolute;
 width: 41px;
@@ -418,6 +446,24 @@ line-height: 23px;
 color: #0D062D;
 
 }
+.walletree2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 32px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 162px;
+    height: 45px;
+    left: 1230px;
+    top: 134px;
+    
+    /* Joba/Blue-gradient */
+    
+    background: linear-gradient(92.76deg, #4C5ACD 50.52%, #F598AA 150.68%, #FDDFD0 168.67%);
+    border-radius: 8px;
+}
 .walletree{
     display: flex;
 flex-direction: row;
@@ -431,6 +477,7 @@ width: 290px;
 height: 52px;
 left: 948px;
 top: 19px;
+
 
 /* Joba/primary-colour/600 */
 

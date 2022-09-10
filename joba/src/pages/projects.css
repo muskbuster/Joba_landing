@@ -121,6 +121,9 @@ flex-grow: 0;
     order: 1;
     flex-grow: 0;
 }
+input{
+    text-indent: 10px;
+  }
 .header{
     position: absolute;
 width: 247px;

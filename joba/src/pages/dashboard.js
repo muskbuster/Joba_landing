@@ -5,7 +5,10 @@ import {useState} from "react";
 import logo from "../../src/pages/ljoba2.png"
 import near from "../../src/pages/near.png"
 import { Button, Form, Col} from "react-bootstrap";
-
+import cat from"/workspace/init/joba/src/components/vuesax/outline/category.svg"
+import usdc from "/workspace/init/joba/src/components/vuesax/linear/usd-coin-(usdc).svg"
+import message from "/workspace/init/joba/src/components/vuesax/outline/message.svg"
+import settings from "/workspace/init/joba/src/components/vuesax/linear/setting-2.svg"
 export default function Dashboard(){
     const isConnected = window.walletConnection.isSignedIn();
     const wallet =`${window.accountId}`
@@ -61,30 +64,40 @@ export default function Dashboard(){
              {buttonLabel}
            </Button>
            </Link></div>
-<img className="logoholder" src={logo} alt="logo" />
+{/* <img className="logoholder" src={logo} alt="logo" /> */}
+<Link to="/homepage">
+            <button >
+     <img className="logoholder" alt="" src={logo} />
+      </button>
+            </Link>
+
 <div className="homebut">
+<img className="icos" src={cat} alt="React Logo" />
     <div className="fonty">
         Home
     </div>
 </div>
 <div className="homebut1">
+<img className="icos" src={usdc} alt="React Logo" />
     <div className="fonty">
         Earn
     </div>
 </div>
 <div className="homebut2">
+<img className="icos" src={message} alt="React Logo" />
     <div className="fonty">
         Messages
     </div>
 </div>
 <div className="homebut3">
+<img className="icos" src={settings} alt="React Logo" />
     <div className="fonty">
         Settings
     </div>
 </div>
 </div>
 <div className="home"> Home </div>
-<div className="walletbalance"><div className="blfont"> balance</div></div>
+<Link to="/projects" className="walletree2"><div className="fontyx" > Create Project</div></Link>
 <div className="successful">
     <div className="dot"></div>
     <div className="line"></div>

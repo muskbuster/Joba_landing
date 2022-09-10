@@ -3,6 +3,8 @@ import { login, logout } from '/workspace/init/joba/src/utils.js';
 import '/workspace/init/joba/src/login.css';
 import 'regenerator-runtime/runtime';
 import { Link } from 'react-router-dom';
+import talent from "/workspace/init/joba/src/components/talent.svg"
+import builder from"/workspace/init/joba/src/components/builder.svg"
 export default function Logger() {
   const isConnected = window.walletConnection.isSignedIn();
 
@@ -42,15 +44,17 @@ export default function Logger() {
         <div className="h3">
         {title}
         </div>
-        <Link to="/projects">
+        <Link to="/dashboard">
         <button className="box1">
         <div >
           <div className="ih1">
             I am talent
           </div>
+          <img src={talent} className="svgholder"/>
           <div className="ih2">
           I am looking for roles  </div>
         </div>
+        
         </button>
         </Link>
         <button className="box2">
@@ -58,6 +62,7 @@ export default function Logger() {
         <div className="ih1">
           I am builder
           </div>
+          <img src={builder} className="svgholder"/>
           <div className="ih2">
           I am looking to hire  </div>
         </div>
