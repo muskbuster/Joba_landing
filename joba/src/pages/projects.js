@@ -66,12 +66,7 @@ export default function Project() {
     </div>
     <form onSubmit={handleSubmit} className="pnvoicebox">
       <div className="content">
-      Lonkie agency 
-      1901 Thornridge Cir. Shiloh, Hawaii 81063
-      United States of America
-      (308) 555-0121
-      {/* todo gotta render these from db */}
-      valentinekings@gmail.com 
+    
       </div>
       <div className="invdetails">
       Invoice #02
@@ -79,7 +74,7 @@ export default function Project() {
       </div>
       <div className="userdetails">
         <label className="name">
-        batman
+        {wallet}
         </label>
         <img className="imgholder" src={hero}/>
       </div>
