@@ -19,7 +19,7 @@ function Homepage() {
     const handleSubmit = (e) => {
       e.preventDefault();
   
-      db.collection("Waitlist").doc(wallet)
+      db.collection("Waitlist").doc(email)
         .set({
           email: email
         })
