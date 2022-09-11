@@ -16,9 +16,9 @@ const Navbar = () => {
       <div className={styles.navbar}>
   
             <Link to="/homepage">
-            <button >
-     <img className={styles.joba02Icon} alt="" src={logo} />
-      </button>
+            <Button className={styles.joba02Icon} >
+     <img  alt="" src={logo} />
+      </Button>
             </Link>
             <Link to="/login">
              <Button  className={styles.button}  variant="primary">

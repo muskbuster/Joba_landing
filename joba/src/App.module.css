@@ -179,14 +179,41 @@ border-radius: 8px;
   position: absolute;
   top: 7px;
   left: 205px;
+  padding: 0;
+border: none;
   width: 149px;
   height: 76px;
+  background-color: Transparent;
+  overflow: hidden;
+}
+.joba02Icon:hover  {
+  position: absolute;
+  top: 7px;
+  left: 205px;
+  padding: 0;
+border: none;
+  width: 149px;
+  height: 76px;
+  background-color: Transparent;
+  overflow: hidden;
+}
+
+.joba02Icon:active  {
+  position: absolute;
+  top: 7px;
+  left: 205px;
+  padding: 0;
+border: none;
+  width: 149px;
+  height: 76px;
+  background-color: Transparent;
+  ;
   overflow: hidden;
 }
 .heroSectionDiv {
   top: 0;
   left: 0;
-  background-color: #fff;
+ background-color: Transparent;
   width: 1470px;
   height: 689px;
   font-size: 76px;
@@ -416,7 +443,7 @@ border-radius: 8px;
   top: 1957px;
   left: -8px;
   background-color: #021926;
-  width: 1470px;
+  width: 1700px;
   height: 517px;
   font-size: 16px;
   color: #fff1cd;

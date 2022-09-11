@@ -11,7 +11,7 @@ background: #000609;
 }
 .pagecont{
     position: absolute;
-  left: 100px;
+  left: 00px;
 }
 .icos{
     position: absolute;
@@ -169,20 +169,10 @@ letter-spacing: -0.01em;
 color: #424242;
 }
 .sph{
-position: absolute;
-width: 314px;
-height: 177px;
-right: 731px;
-border-radius: 3%;
-background: #ffffff;
-top: 27px;
-
-}
-.sph{
     position: absolute;
     width: 314px;
     height: 177px;
-    right: 731px;
+    left: 40px;
     border-radius: 3%;
     background: #ffffff;
     top: 27px;
@@ -192,7 +182,7 @@ top: 27px;
         position: absolute;
         width: 314px;
         height: 177px;
-        right: 397px;
+        left: 434px;
         border-radius: 3%;
         background: #ffffff;
         top: 27px;
@@ -255,7 +245,7 @@ color: #0D062D;
             }
 .projectshold{
     position: absolute;
-width: 1095px;
+width: 1495px;
 height: 443px;
 left: 232px;
 top: 684px;
@@ -456,7 +446,7 @@ color: #0D062D;
     position: absolute;
     width: 162px;
     height: 45px;
-    left: 1230px;
+    left: 1530px;
     top: 134px;
     
     /* Joba/Blue-gradient */
@@ -475,7 +465,7 @@ border-color: #000000;
 position: absolute;
 width: 290px;
 height: 52px;
-left: 948px;
+left: 1348px;
 top: 19px;
 
 
@@ -493,13 +483,13 @@ border-radius: 8px;
 width: 354px;
 height: 350px;
 border-radius: 4%;
-left: 232px;
+left: 282px;
 top: 224px;
 background-color: #f7f7f7;
 }
 .vertical{
     position: absolute;
-width: 1258px;
+width: 1448px;
 height: 90px;
 left: 182px;
 top: 0px;
@@ -535,7 +525,7 @@ border: 3px solid #219150;
 width: 355px;
 height: 350px;
 border-radius: 4%;
-left: 602px;
+left: 692px;
 top: 224px;
 background-color: #f7f7f7;
 }
@@ -544,7 +534,7 @@ background-color: #f7f7f7;
     position: absolute;
     width: 354px;
     height: 350px;
-    left: 973px;
+    left: 1103px;
     border-radius: 4%;
     top: 224px;
     background-color: #f7f7f7;
