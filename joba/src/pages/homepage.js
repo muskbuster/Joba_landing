@@ -82,9 +82,8 @@ function Homepage() {
           <b className={styles.joinTheJobaNetwork}>Join the Joba network</b>
           <b className={styles.earnAndInvestInWeb3}>Earn and invest in Web3</b>
           <div className={styles.loremIpsumDolorSitAmetCo}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-            curabitur ut ut urna. Integer sollicitudin mattis ac gravida vel
-            egestas gravida diam.
+            With the upcoming release of Joba. You will be able work invest and earn from a wide range of projects.And maintain your hiring and vesting needs in one place
+
           </div>
           <img
             className={styles.lastSectionImage}
@@ -110,9 +109,7 @@ function Homepage() {
             Stay tuned for more updates
           </b>
           <div className={styles.loremIpsumDolorSitAmetCo1}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-            curabitur ut ut urna. Integer sollicitudin mattis ac gravida vel
-            egestas gravida diam.
+            This is the initial iteration of what Joba could be. Subscribe to get regular updates on developments of joba in the NEAR future.
           </div>
           <div className={styles.contactUsDiv}>Contact us:</div>
           <a href="https://discord.gg/wkHWPZMs" target="_blank" className={styles.telegramDiv}>Telegram</a>
