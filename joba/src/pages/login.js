@@ -28,7 +28,7 @@ export default function Logger() {
           You need to connect your wallet first
       </div>
       <p className="h2">
-      To become a talent on joba, you’re required to connect to your metamask wallet  to enable access
+      To become a talent on joba, you’re required to connect to your near wallet  to enable access
       </p>
       
         <button className='btn2' onClick={handleClick}>{buttonLabel}</button>
