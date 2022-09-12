@@ -197,7 +197,26 @@ border: none;
   background-color: Transparent;
   overflow: hidden;
 }
-
+.walletree{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14px 48px;
+background: #01141E;
+border-radius: 8px;
+gap: 10px;
+border-color: #000000;
+position: absolute;
+width: 290px;
+height: 52px;
+left: 1248px;
+top: 19px;
+}
+.walletree:hover{
+  background: linear-gradient(92.76deg, #4C5ACD 50.52%, #F598AA 150.68%, #FDDFD0 168.67%);
+  transition-delay: 100ms;
+}
 .joba02Icon:active  {
   position: absolute;
   top: 7px;

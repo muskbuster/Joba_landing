@@ -4,6 +4,7 @@ import { db } from "/workspace/init/joba/src/config/firebaseConfig.js";
 import {useState} from "react";
 import logo from "../../src/pages/ljoba2.png"
 import near from "../../src/pages/near.png"
+import msg2 from"/workspace/init/joba/src/components/vuesax/outline/messagecopy.svg";
 import { Button, Form, Col} from "react-bootstrap";
 import cat from"/workspace/init/joba/src/components/vuesax/outline/category.svg"
 import usdc from "/workspace/init/joba/src/components/vuesax/linear/usd-coin-(usdc).svg"
@@ -58,12 +59,14 @@ export default function Dashboard(){
 <>
 <div className="pagecont">
 <div className="sidebar">
-    <div className="vertical"><Link to="/login">
+    <div className="vertical">
              <Button  className="walletree" variant="primary">
+             <Link to="/login">
                 <img className="near" src={near}/>
+                </Link>
              {buttonLabel}
            </Button>
-           </Link></div>
+           </div>
 {/* <img className="logoholder" src={logo} alt="logo" /> */}
 <Link to="/homepage">
             <button >
@@ -134,7 +137,9 @@ export default function Dashboard(){
     <div className="m2">
     Brainstorming brings team members' diverse experience into play. 
     </div>
+    <img className="msgcom" src={msg2} alt="React Logo" />
     <div className="m3">
+    
     </div> <div className="comms"> 2 comments</div>
 </div>
 <div className="sph1"><div className="m1">
@@ -142,7 +147,7 @@ GeegPay Development
     </div>
     <div className="m2">
     Brainstorming brings team members' diverse experience into play. 
-    </div>
+    </div><img className="msgcom" src={msg2} alt="React Logo" />
     <div className="m3">
     </div>
     <div className="comms"> 2 comments</div>
@@ -152,7 +157,7 @@ NFT Frontend
     </div>
     <div className="m2">
     Brainstorming brings team members' diverse experience into play. 
-    </div>
+    </div><img className="msgcom" src={msg2} alt="React Logo" />
     <div className="m3">
     </div>
     <div className="comms"> 2 comments</div>
@@ -162,7 +167,7 @@ DeFi
     </div>
     <div className="m2">
     Brainstorming brings team members' diverse experience into play. 
-    </div>
+    </div><img className="msgcom" src={msg2} alt="React Logo" />
     <div className="m3">
     </div>
     <div className="comms"> 4 comments</div>
@@ -172,7 +177,7 @@ NFT Website
     </div>
     <div className="m2">
     Brainstorming brings team members' diverse experience into play. 
-    </div>
+    </div><img className="msgcom" src={msg2} alt="React Logo" />
     <div className="m3">
     </div>
     <div className="comms"> 9 comments</div>
@@ -182,7 +187,7 @@ Development
     </div>
     <div className="m2">
     Brainstorming brings team members' diverse experience into play. 
-    </div>
+    </div><img className="msgcom" src={msg2} alt="React Logo" />
     <div className="m3">
     </div>
     <div className="comms"> 2 comments</div>

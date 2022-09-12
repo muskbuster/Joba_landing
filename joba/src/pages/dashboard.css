@@ -172,21 +172,22 @@ color: #424242;
     position: absolute;
     width: 314px;
     height: 177px;
-    left: 40px;
+    left: 90px;
     border-radius: 3%;
     background: #ffffff;
     top: 27px;
+    border-radius: 5%;
     
     }
 .sph2{
         position: absolute;
         width: 314px;
         height: 177px;
-        left: 434px;
+        left: 504px;
         border-radius: 3%;
         background: #ffffff;
         top: 27px;
-        
+        border-radius: 5%;
         }
 .sph3{
         position: absolute;
@@ -195,27 +196,35 @@ color: #424242;
         right: 63px;
         border-radius: 3%;
         background: #ffffff;
-        top: 27px;
+        top: 27px;  border-radius: 5%;
 }
 .sph4{
     position: absolute;
     width: 314px;
     height: 177px;
-    right: 397px;
+    left: 90px;
     border-radius: 3%;
     background: #ffffff;
-    top: 231px;
+    top: 231px;  border-radius: 5%;
     
     }
     .sph5{
         position: absolute;
         width: 314px;
         height: 177px;
-        right: 731px;
+        left: 504px;
         border-radius: 3%;
         background: #ffffff;
         top: 231px;
-        
+        border-radius: 5%;
+        }
+.msgcom{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 126px;
+  bottom: 24px;
+
         }
         .suc{
             position: absolute;
@@ -245,7 +254,7 @@ color: #0D062D;
             }
 .projectshold{
     position: absolute;
-width: 1495px;
+width: 1295px;
 height: 443px;
 left: 232px;
 top: 684px;
@@ -406,7 +415,7 @@ top: 56px;
 font-family: 'Plus Jakarta Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 12px;
+font-size: 16px;
 line-height: 18px;
 /* or 150% */
 
@@ -419,9 +428,9 @@ height: 20px;
 }
 .m1{
     position: absolute;
-width: 202px;
+width: 222px;
 height: 23px;
-left: 42px;
+left: 22px;
 top: 27px;
 right: 20px;
 
@@ -446,7 +455,7 @@ color: #0D062D;
     position: absolute;
     width: 162px;
     height: 45px;
-    left: 1530px;
+    left: 1330px;
     top: 134px;
     
     /* Joba/Blue-gradient */
@@ -465,7 +474,7 @@ border-color: #000000;
 position: absolute;
 width: 290px;
 height: 52px;
-left: 1348px;
+left: 1148px;
 top: 19px;
 
 

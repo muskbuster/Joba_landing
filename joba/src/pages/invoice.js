@@ -71,7 +71,7 @@ export default function Invoice() {
         className="invfont"
         type="text"
         size="sm"
-        placeholder="enter a number of your choice"
+        placeholder="enter a number"
         onChange={(e) => setId(e.target.value)}
       />
       Issued on June 30,2022
