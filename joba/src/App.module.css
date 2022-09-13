@@ -432,6 +432,7 @@ border-radius: 8px;
   left: 30px;
   letter-spacing: -0.01em;
   line-height: 155%;
+  border-radius: 30%;
 }
 .frameButton,
 .frameDiv1 {
@@ -448,6 +449,19 @@ border-radius: 8px;
 }
 .frameButton {
   left: 889px;
+  background: linear-gradient(92.76deg, #4C5ACD 50.52%, #F598AA 150.68%, #FDDFD0 168.67%);
+   width: 153px;
+   height: 50px;
+   border-color: transparent;
+   color:white;
+}
+.frameButton:hover {
+  left: 889px;
+  background: black;
+   width: 153px;
+   height: 60px;
+   border-color: transparent;
+   color:white;
 }
 .footerDiv,
 .joba02Icon1 {
