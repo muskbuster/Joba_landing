@@ -1,15 +1,15 @@
 import "../../src/pages/dashboard.css";
 import { Link , useNavigate} from 'react-router-dom';
-import { db } from "/workspace/init/joba/src/config/firebaseConfig.js";
+import { db } from "../../src/config/firebaseConfig.js";
 import {useState} from "react";
 import logo from "../../src/pages/ljoba2.png"
 import near from "../../src/pages/near.png"
-import msg2 from"/workspace/init/joba/src/components/vuesax/outline/messagecopy.svg";
+import msg2 from"../../src/components/vuesax/outline/messagecopy.svg";
 import { Button, Form, Col} from "react-bootstrap";
-import cat from"/workspace/init/joba/src/components/vuesax/outline/category.svg"
-import usdc from "/workspace/init/joba/src/components/vuesax/linear/usd-coin-(usdc).svg"
-import message from "/workspace/init/joba/src/components/vuesax/outline/message.svg"
-import settings from "/workspace/init/joba/src/components/vuesax/linear/setting-2.svg"
+import cat from"../../src/components/vuesax/outline/category.svg"
+import usdc from "../../src/components/vuesax/linear/usd-coin-(usdc).svg"
+import message from "../../src/components/vuesax/outline/message.svg"
+import settings from "../../src/components/vuesax/linear/setting-2.svg"
 export default function Dashboard(){
     const isConnected = window.walletConnection.isSignedIn();
     const wallet =`${window.accountId}`
@@ -60,12 +60,14 @@ export default function Dashboard(){
 <div className="pagecont">
 <div className="sidebar">
     <div className="vertical">
+    <Link to="/login">
              <Button  className="walletree" variant="primary">
-             <Link to="/login">
+             
                 <img className="near" src={near}/>
-                </Link>
+                
              {buttonLabel}
            </Button>
+           </Link>
            </div>
 {/* <img className="logoholder" src={logo} alt="logo" /> */}
 <Link to="/homepage">

@@ -1,14 +1,14 @@
 import {useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form, Col} from "react-bootstrap";
-import styles from "/workspace/init/joba/src/App.module.css";
+import styles from "../../src/App.module.css";
 import { useForm } from "react-hook-form";
-import logo from "/workspace/init/joba/src/joba.png"
+import logo from "../../src/joba.png"
 import { login, logout } from '/workspace/init/joba/src/utils.js';
-import hero from "/workspace/init/joba/src/hero1.png"
-import ndhero from "/workspace/init/joba/src/hero2.png"
-import { db } from "/workspace/init/joba/src/config/firebaseConfig.js";
-import rdhero from "/workspace/init/joba/src/hero3.png" 
+import hero from "../../src/hero1.png"
+import ndhero from "../../src/hero2.png"
+import { db } from "../../src/config/firebaseConfig.js";
+import rdhero from "../../src/hero3.png" 
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';

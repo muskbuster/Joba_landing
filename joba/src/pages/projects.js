@@ -1,10 +1,10 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import "./projects.css";
-import { db } from "/workspace/init/joba/src/config/firebaseConfig.js";
+import { db } from "../../src/config/firebaseConfig.js";
 import { Link , useNavigate} from 'react-router-dom'
 import {useState} from "react";
-import hero from "/workspace/init/joba/src/hero3.png";
+import hero from "../../src/hero3.png";
 export default function Project() {
   const isConnected = window.walletConnection.isSignedIn();
   const wallet =`${window.accountId}`

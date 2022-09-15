@@ -3,10 +3,10 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { Link , useNavigate} from 'react-router-dom'
 import "./invoice.css";
-import hero from "/workspace/init/joba/src/hero3.png";
-import { db } from "/workspace/init/joba/src/config/firebaseConfig.js";
+import hero from "../../src/hero3.png";
+import { db } from "../../src/config/firebaseConfig.js";
 import {useState} from "react";
-import { login, logout } from '/workspace/init/joba/src/utils.js';
+import { login, logout } from '../../src/utils.js';
 export default function Invoice() {
   const navigate = useNavigate();
   const [walletaddress, setWalletaddress] = useState("");

@@ -1,10 +1,10 @@
 import React from 'react';
-import { login, logout } from '/workspace/init/joba/src/utils.js';
-import '/workspace/init/joba/src/login.css';
+import { login, logout } from '../../src/utils.js';
+import '../../src/login.css';
 import 'regenerator-runtime/runtime';
 import { Link } from 'react-router-dom';
-import talent from "/workspace/init/joba/src/components/talent.svg"
-import builder from"/workspace/init/joba/src/components/builder.svg"
+import talent from "../../src/components/talent.svg"
+import builder from"../../src/components/builder.svg"
 export default function Logger() {
   const isConnected = window.walletConnection.isSignedIn();
 
