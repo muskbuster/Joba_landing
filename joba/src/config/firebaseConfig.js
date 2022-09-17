@@ -1,12 +1,13 @@
 import firebase from "firebase";
 import 'firebase/firestore';
 var firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyA0ejZhO_suptBbetyVpcLkXEtyP2Jwq9o",
-  authDomain: "joba-waitlist.firebaseapp.com",
-  projectId: "joba-waitlist",
-  storageBucket: "joba-waitlist.appspot.com",
-  messagingSenderId: "517675731736",
-  appId: "1:517675731736:web:724ea5188acfad7ef56c6d",
+  apiKey: "AIzaSyDcbNTN3QobpHJyZzeKlio9uZoG7fYAAQ8",
+  authDomain: "joba-da417.firebaseapp.com",
+  projectId: "joba-da417",
+  storageBucket: "joba-da417.appspot.com",
+  messagingSenderId: "546664797820",
+  appId: "1:546664797820:web:fa54d0062de000d72adbf9",
+  measurementId: "G-H0S4ZVSLCF"
 
 });
 
